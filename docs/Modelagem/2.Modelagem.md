@@ -1,0 +1,4 @@
+# 2. Desenho de Software (Modelagem)
+
+A Wiki ou GitPages do Projeto deve conter um tópico dedicado ao Módulo Desenho de Software (Modelagem), com um subtópico principal, conforme [2.1](/docs/Modelagem/2.1.ModelagemTradicional.md)
+, subdividido em três ([2.1.1](/docs/Modelagem/2.1.1.UMLEstaticos.md), [2.1.2](/docs/Modelagem/2.1.2.UMLDinamicos.md) e [2.1.3](/docs/Modelagem/2.1.3.Agil.md)). Adicionalmente, há dois subtópicos de cunho complementar, conforme [2.2](/docs/Modelagem/2.2.IniciativasExtras.md) e [2.3](/docs/Modelagem/2.3.ParticipacoesModelagem.md).

@@ -1,0 +1,11 @@
+# 3.3. Módulo Padrões de Projeto Extras
+
+**Foco_03:** Padrões de Projeto Extras (EMERGENTES).
+
+Entrega Mínina: UM padrão emergente, com nível de modelagem & nível de código evidenciados.
+
+Apresentação (em sala) explicando os padrões de projeto extra, com: (i) rastro claro aos membros participantes; (ii) justificativas & senso crítico sobre os padrões estudados; (iii) breve apresentação PROBLEMA/SOLUÇÃO - em nível de modelagem & nível de código (preferencialmente, com elo para o código) - de pelo menos UM padrão emergente (PODE SER EXEMPLO-TOY, mas dentro do escopo do domínio do projeto), e (iv) comentários gerais sobre iniciativas extras. Tempo da Apresentação: +/- 5min. Recomendação: Apresentar diretamente via Wiki ou GitPages do Projeto.
+
+A Wiki ou GitPages do Projeto deve conter um tópico dedicado ao Módulo Padrões de Projeto Extras, com artefatos, histórico de versões, referências, e demais detalhamentos gerados pela equipe nesse escopo.
+
+Demais orientações disponíveis nas Diretrizes (vide Moodle).

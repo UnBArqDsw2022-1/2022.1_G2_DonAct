@@ -10,16 +10,16 @@ Modificar: Este repositório traz um template de repo de documentação a ser se
 
 |Matrícula | Aluno | Git-hub |
 | -- | -- | -- |
-| 19/0044799  |  Antonio Ferreira de Castro Neto | -- |
-| 18/0118005  |  Carlos Rafael Vasconcelos de Matos | -- |
-| 18/0099353  |  Cibele Freitas Goudinho | -- |
-| 18/0119818  |  Felipe Boccardi Silva Agustini | -- |
-| 18/0122606  |  Isadora da Cruz Galvão dos Santos Soares | -- |
-| 19/0033681  |  Luiz Henrique Fernandes Zamprogno | -- |
-| 18/0130889  |  Sávio Cunha de Carvalho | -- |
-| 19/0020601  |  Victor Buendia Cruz de Alvim | -- |
-| 19/0038926  |  Victor Eduardo Araújo Ribeiro | -- |
-| 18/0145363  |  Yan Andrade de Sena | -- |
+| 19/0044799  |  Antonio Ferreira de Castro Neto | [antoniotoineto](https://github.com/antoniotoineto) |
+| 18/0118005  |  Carlos Rafael Vasconcelos de Matos | [carloszoft](https://github.com/carloszoft) |
+| 18/0099353  |  Cibele Freitas Goudinho | [CibeleG](https://github.com/CibeleG) |
+| 18/0119818  |  Felipe Boccardi Silva Agustini | [fealps](https://github.com/fealps) |
+| 18/0122606  |  Isadora da Cruz Galvão dos Santos Soares | [isadoragalvaoss](https://github.com/isadoragalvaoss) |
+| 19/0033681  |  Luiz Henrique Fernandes Zamprogno | [luiz-herique](https://github.com/luiz-herique) |
+| 18/0130889  |  Sávio Cunha de Carvalho | [savioc2](https://github.com/savioc2) |
+| 19/0020601  |  Victor Buendia Cruz de Alvim | [Victor-Buendia](https://github.com/Victor-Buendia)|
+| 19/0038926  |  Victor Eduardo Araújo Ribeiro | [victorear05](https://github.com/victorear05) |
+| 18/0145363  |  Yan Andrade de Sena | [yandrade1305](https://github.com/yandrade1305) |
 
 ## Tecnologias(tirar dessa pagina)
 

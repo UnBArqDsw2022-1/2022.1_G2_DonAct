@@ -44,9 +44,9 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?
-( ) SIM
-(x) NÃO
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
+( ) SIM  
+(x) NÃO  
+Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.  
 
 ## Informações Complementares 
 Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.

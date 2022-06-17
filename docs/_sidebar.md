@@ -38,4 +38,4 @@
 
 - **Projeto**
   - **Requisitos de Software**
-    - [5.1. Rich Picture](/Requisitos/5.1.RichPicture.md)
+    - [5.1. Rich Picture](./Requisitos/5.1.RichPicture.md)

@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](../README.md)
+- [Home](/)
 - [Diretrizes](/Diretrizes/Diretrizes.md)
 
 

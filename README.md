@@ -1,31 +1,52 @@
-# RepositorioTemplate
+# Grupo 2 - Arquitetura e Desenho de Software
 
-Repositório que deve ser utilizado como template inicial pelos grupos da matéria de Arquitetura e Desenho de Software.
+O presente repositório tem como objetivo o auxílio e registro do processo de desenvolvimento e resultados obtidos no projeto do grupo 2 da disciplina de Arquitetura e Desenho de Software da Universidade de Brasília ministrada pela professora Milene Serrano no semestre de 2022.1.
+<!--**Atualizar Nome do Repositório: 2022.1_G2_Nome_Projeto-->
 
-## Introdução
+# Nome do Projeto
 
-Este repositório traz um template de repo de documentação a ser seguido pelos grupos de arquitetura e desenho de software.
+**Código da Disciplina**: FGA0208<br>
+**Número do Grupo**: 02<br>
 
-## Tecnologia
+## Alunos
+|Matrícula | Aluno | Git-hub |
+| -- | -- | -- |
+| 19/0044799  |  Antonio Ferreira de Castro Neto | [antoniotoineto](https://github.com/antoniotoineto) |
+| 18/0118005  |  Carlos Rafael Vasconcelos de Matos | [carloszoft](https://github.com/carloszoft) |
+| 18/0099353  |  Cibele Freitas Goudinho | [CibeleG](https://github.com/CibeleG) |
+| 18/0119818  |  Felipe Boccardi Silva Agustini | [fealps](https://github.com/fealps) |
+| 18/0122606  |  Isadora da Cruz Galvão dos Santos Soares | [isadoragalvaoss](https://github.com/isadoragalvaoss) |
+| 19/0033681  |  Luiz Henrique Fernandes Zamprogno | [luiz-herique](https://github.com/luiz-herique) |
+| 18/0130889  |  Sávio Cunha de Carvalho | [savioc2](https://github.com/savioc2) |
+| 19/0020601  |  Victor Buendia Cruz de Alvim | [Victor-Buendia](https://github.com/Victor-Buendia)|
+| 19/0038926  |  Victor Eduardo Araújo Ribeiro | [victorear05](https://github.com/victorear05) |
+| 18/0145363  |  Yan Andrade de Sena | [yandrade1305](https://github.com/yandrade1305) |
 
-A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
+## Sobre 
+O projeto {Nome_Projeto} será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
 
-```shell
-"Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on GitHub Pages."
-```
+## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
+Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
 
-### Instalando o docsify
+## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
 
-Execute o comando:
+## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
+Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
 
-```shell
-npm i docsify-cli -g
-```
+## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
+Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
-### Executando localmente
+## Descritivo dos Principais Aspectos Técnicos 
+**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
-Para iniciar o site localmente, utilize o comando:
+## O Projeto está rodando?
+( ) SIM  
+(x) NÃO  
+Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.  
 
-```shell
-docsify serve ./docs
-```
+## Informações Complementares 
+Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.

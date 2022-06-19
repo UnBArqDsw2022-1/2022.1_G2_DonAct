@@ -1,7 +1,8 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](/)
+- [Home](../README.md)
 - [Diretrizes](/Diretrizes/Diretrizes.md)
+
 
 - **Base**
   - [1. Desenho de Software (Base)](/Base/1.Base.md)
@@ -33,3 +34,7 @@
     - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
     - [4.3. Iniciativas Extras - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.IniciativasExtras.md)
     - [4.4. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.4.ParticipacoesArqReutilizacao.md)
+
+- **Projeto**
+  - **Requisitos de Software**
+    - [5.1. Rich Picture](./Requisitos/5.1.RichPicture.md)

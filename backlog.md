@@ -1,3 +1,12 @@
+# 1.1. Backlog
+
+## 1.1.1.  Introdução
+
+O Backlog é um conjunto de funcionalidade desejáveis para o produto; que via de regra, são definidas pelo dono do produto (Product Owner). Em outras palavras, um repositório de requisitos a serem desenvolvidos e entregues.
+O desenvolvimento deste artefato ocorre incrementalmente, ou seja, passa por alterações no decorrer do projeto; adaptando-se as necessidades do cliente/projeto.
+
+## 1.2. Board
+
 | ID   | Feature                   | História de Usuário                                                                                                                  | Priorização |
 | ---- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | US01 | FE01 - Cadastro de doador | Eu como usuário doador desejo me cadastrar no site                                                                                   |
@@ -21,3 +30,7 @@
 | US19 | FE10 - Feedback da doação | Eu como usuário doador desejo receber o feedback de quem recebeu a doação, quando possível                                           |
 | US20 | FE11 - Home externa       | Eu como usuário desejo receber acessar o site e ver informações gerais so app sem precisar fazer cadastro ou login                   |
 | US21 | FE11 - Home externa       | Eu como usuário desejo realizar login e acessar partes mais restritas do site                                                        |
+
+# Referências
+
+- O que é Backlog? Qual sua função e como fazer sua gestão?. Disponível em: https://www.fm2s.com.br/backlog/

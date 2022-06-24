@@ -5,7 +5,6 @@
     content: '';
     width: 100%;
     position: absolute;
-    background-image: none !important
 }
 
 </style>

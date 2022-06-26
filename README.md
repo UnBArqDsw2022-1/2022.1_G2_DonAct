@@ -4,7 +4,7 @@
 **Número do Grupo**: 02<br>
 
 ## Alunos
-|Matrícula | Aluno | Git-hub |
+|Matrícula | Aluno | Github |
 | -- | -- | -- |
 | 19/0044799  |  Antonio Ferreira de Castro Neto | [antoniotoineto](https://github.com/antoniotoineto) |
 | 18/0118005  |  Carlos Rafael Vasconcelos de Matos | [carloszoft](https://github.com/carloszoft) |

@@ -1,15 +1,14 @@
 # Grupo 2 - Arquitetura e Desenho de Software
 
 O presente repositório tem como objetivo o auxílio e registro do processo de desenvolvimento e resultados obtidos no projeto do grupo 2 da disciplina de Arquitetura e Desenho de Software da Universidade de Brasília ministrada pela professora Milene Serrano no semestre de 2022.1.
-<!--**Atualizar Nome do Repositório: 2022.1_G2_Nome_Projeto-->
 
-# Nome do Projeto
+# Donact
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 02<br>
 
 ## Alunos
-|Matrícula | Aluno | Git-hub |
+|Matrícula | Aluno | Github |
 | -- | -- | -- |
 | 19/0044799  |  Antonio Ferreira de Castro Neto | [antoniotoineto](https://github.com/antoniotoineto) |
 | 18/0118005  |  Carlos Rafael Vasconcelos de Matos | [carloszoft](https://github.com/carloszoft) |
@@ -23,7 +22,7 @@ O presente repositório tem como objetivo o auxílio e registro do processo de d
 | 18/0145363  |  Yan Andrade de Sena | [yandrade1305](https://github.com/yandrade1305) |
 
 ## Sobre 
-O projeto {Nome_Projeto} será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
+O projeto Donact será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.

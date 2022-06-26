@@ -1,7 +1,4 @@
-# Grupo 2 - Arquitetura e Desenho de Software
 
-O presente repositório tem como objetivo o auxílio e registro do processo de desenvolvimento e resultados obtidos no projeto do grupo 2 da disciplina de Arquitetura e Desenho de Software da Universidade de Brasília ministrada pela professora Milene Serrano no semestre de 2022.1.
-<!--**Atualizar Nome do Repositório: 2022.1_G2_Nome_Projeto-->
 
 # Nome do Projeto
 

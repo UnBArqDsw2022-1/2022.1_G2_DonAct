@@ -1,4 +1,9 @@
-# DonAct
+# Grupo 2 - Arquitetura e Desenho de Software
+
+O presente repositório tem como objetivo o auxílio e registro do processo de desenvolvimento e resultados obtidos no projeto do grupo 2 da disciplina de Arquitetura e Desenho de Software da Universidade de Brasília ministrada pela professora Milene Serrano no semestre de 2022.1.
+<!--**Atualizar Nome do Repositório: 2022.1_G2_Nome_Projeto-->
+
+# Nome do Projeto
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 02<br>
@@ -18,7 +23,7 @@
 | 18/0145363  |  Yan Andrade de Sena | [yandrade1305](https://github.com/yandrade1305) |
 
 ## Sobre 
-O projeto DonAct será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
+O projeto {Nome_Projeto} será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.

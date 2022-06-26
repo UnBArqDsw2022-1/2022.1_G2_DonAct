@@ -1,0 +1,22 @@
+{
+    "name": "grupo-02",
+    "version": "1.0.0",
+    "description": "**Código da Disciplina**: FGA0208<br>\r **Número do Grupo**: 02<br>",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "start": "docsify serve docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UnBArqDsw2022-1/grupo-02.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/UnBArqDsw2022-1/grupo-02/issues"
+    },
+    "homepage": "https://github.com/UnBArqDsw2022-1/grupo-02#readme"
+}

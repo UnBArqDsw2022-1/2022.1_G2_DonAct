@@ -25,24 +25,24 @@ O projeto Donact será uma aplicação Web com o objetivo de facilitar o process
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 ### Rich Picture versão final
-![Rich Picture - Versão Final](../imgs/rich-picture-final.png)
+![Rich Picture - Versão Final](../docs/imgs/rich-picture-final.png)
 
 ### Protótipo Alta Fidelidade
-![Protótipo Alta Fidelidade HomePage](../imgs/Home-prototipo.jpg)
-![Protótipo Alta Fidelidade Página de doador](../imgs/prototipo-pgDoador.jpg)
-![Protótipo Alta Fidelidade Página de ONG](../imgs/prototipo-pgONG.jpg)
+![Protótipo Alta Fidelidade HomePage](../docs/imgs/Home-prototipo.jpg)
+![Protótipo Alta Fidelidade Página de doador](../docs/imgs/prototipo-pgDoador.jpg)
+![Protótipo Alta Fidelidade Página de ONG](../docs/imgs/prototipo-pgONG.jpg)
 
 ## Cadastro
-![BPMN - Cadastro](../imgs/BPMN-Cadastro.jpg)
+![BPMN - Cadastro](../docs/imgs/BPMN-Cadastro.jpg)
 
 ## Interação usuário
-![BPMN - Interação usuário](../imgs/BPMN-Intera%C3%A7%C3%A3o-usuario.jpg)
+![BPMN - Interação usuário](../docs/imgs/BPMN-Intera%C3%A7%C3%A3o-usuario.jpg)
 
 ## Itens - Visão geral
-![BPMN - Visão geral](../imgs/BPMN-itens.jpg)
+![BPMN - Visão geral](../docs/imgs/BPMN-itens.jpg)
 
 ## Sub processo reutilizável: Verificar Sucesso 
-![BPMN - Sub processo reutilizável: Verificar Sucesso](../imgs/BPMN-SverificaSucesso.jpg)
+![BPMN - Sub processo reutilizável: Verificar Sucesso](../docs/imgs/BPMN-SverificaSucesso.jpg)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.

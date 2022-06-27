@@ -21,6 +21,7 @@
           - [Rich Picture](/Base/1.1.AbordagemNaoEspecifica?id=rich-picture-antônio-neto)
         - [1.1.3.3. Fase 3 - Decision](/Base/1.1.AbordagemNaoEspecifica?id=_1133-fase-3-decision)
           - [Rich Picture Refinado](/Base/1.1.AbordagemNaoEspecifica?id=rich-picture-versão-final)
+          - [Storyboard](/Base/1.1.AbordagemNaoEspecifica?id=storyboard)
           - [Requisitos Não Funcionais](/Base/1.1.AbordagemNaoEspecifica?id=introspecção)
           - [Requisitos Funcionais](/Base/1.1.AbordagemNaoEspecifica?id=brainstorming-de-elicitação)
           - [Backlog do Produto](/Base/1.1.AbordagemNaoEspecifica?id=backlog-produto-priorizado)

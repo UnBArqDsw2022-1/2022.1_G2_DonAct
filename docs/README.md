@@ -39,19 +39,19 @@ O projeto Donact será uma aplicação Web com o objetivo de facilitar o process
 
 ### BPMN
 
-### Cadastro
+#### Cadastro
 
 ![BPMN - Cadastro](../docs/imgs/BPMN-Cadastro.jpg)
 
-### Interação usuário
+#### Interação usuário
 
 ![BPMN - Interação usuário](../docs/imgs/BPMN-Intera%C3%A7%C3%A3o-usuario.jpg)
 
-### Itens - Visão geral
+#### Itens - Visão geral
 
 ![BPMN - Visão geral](../docs/imgs/BPMN-itens.jpg)
 
-### Sub processo reutilizável: Verificar Sucesso
+#### Sub processo reutilizável: Verificar Sucesso
  
 ![BPMN - Sub processo reutilizável: Verificar Sucesso](../docs/imgs/BPMN-SverificaSucesso.jpg)
 

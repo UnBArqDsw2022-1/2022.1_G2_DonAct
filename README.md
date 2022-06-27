@@ -1,9 +1,7 @@
-# Grupo 2 - Arquitetura e Desenho de Software
 
 O presente repositório tem como objetivo o auxílio e registro do processo de desenvolvimento e resultados obtidos no projeto do grupo 2 da disciplina de Arquitetura e Desenho de Software da Universidade de Brasília ministrada pela professora Milene Serrano no semestre de 2022.1.
-<!--**Atualizar Nome do Repositório: 2022.1_G2_Nome_Projeto-->
 
-# Nome do Projeto
+# Donact
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 02<br>
@@ -23,10 +21,39 @@ O presente repositório tem como objetivo o auxílio e registro do processo de d
 | 18/0145363  |  Yan Andrade de Sena | [yandrade1305](https://github.com/yandrade1305) |
 
 ## Sobre 
-O projeto {Nome_Projeto} será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
+O projeto Donact será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
+
+### Rich Picture versão final
+
+![Rich Picture - Versão Final](../docs/imgs/rich-picture-final.png)
+
+### Protótipo Alta Fidelidade
+
+![Protótipo Alta Fidelidade HomePage](../docs/imgs/Home-prototipo.jpg)
+
+![Protótipo Alta Fidelidade Página de doador](../docs/imgs/prototipo-pgDoador.jpg)
+
+![Protótipo Alta Fidelidade Página de ONG](../docs/imgs/prototipo-pgONG.jpg)
+
+### BPMN
+
+### Cadastro
+
+![BPMN - Cadastro](../docs/imgs/BPMN-Cadastro.jpg)
+
+### Interação usuário
+
+![BPMN - Interação usuário](../docs/imgs/BPMN-Intera%C3%A7%C3%A3o-usuario.jpg)
+
+### Itens - Visão geral
+
+![BPMN - Visão geral](../docs/imgs/BPMN-itens.jpg)
+
+### Sub processo reutilizável: Verificar Sucesso
+ 
+![BPMN - Sub processo reutilizável: Verificar Sucesso](../docs/imgs/BPMN-SverificaSucesso.jpg)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.

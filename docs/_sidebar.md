@@ -20,6 +20,7 @@
     - [1.2. Módulo Processos/Metodologias/Abordagens](/Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.3. Iniciativas Extras - Base](/Base/1.3.IniciativasExtras.md)
     - [1.4. Participações - Base](/Base/1.4.ParticipacoesBase.md)
+    - [1.5. Manual de Identidade Visual](/Base/1.5.ManualIdentidadeVisual.md)
 
 - **Modelagem**
   - [2. Desenho de Software (Modelagem)](/Modelagem/2.Modelagem.md)
@@ -44,7 +45,3 @@
     - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
     - [4.3. Iniciativas Extras - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.IniciativasExtras.md)
     - [4.4. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.4.ParticipacoesArqReutilizacao.md)
-
-- **Projeto**
-  - **Requisitos de Software**
-    - [5.1. Rich Picture](./Requisitos/5.1.RichPicture.md)

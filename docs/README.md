@@ -24,26 +24,35 @@ O presente repositório tem como objetivo o auxílio e registro do processo de d
 O projeto Donact será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
+
 ### Rich Picture versão final
+
 ![Rich Picture - Versão Final](../docs/imgs/rich-picture-final.png)
 
 ### Protótipo Alta Fidelidade
+
 ![Protótipo Alta Fidelidade HomePage](../docs/imgs/Home-prototipo.jpg)
+
 ![Protótipo Alta Fidelidade Página de doador](../docs/imgs/prototipo-pgDoador.jpg)
+
 ![Protótipo Alta Fidelidade Página de ONG](../docs/imgs/prototipo-pgONG.jpg)
 
 ### BPMN
 
 ### Cadastro
+
 ![BPMN - Cadastro](../docs/imgs/BPMN-Cadastro.jpg)
 
 ### Interação usuário
+
 ![BPMN - Interação usuário](../docs/imgs/BPMN-Intera%C3%A7%C3%A3o-usuario.jpg)
 
 ### Itens - Visão geral
+
 ![BPMN - Visão geral](../docs/imgs/BPMN-itens.jpg)
 
-### Sub processo reutilizável: Verificar Sucesso 
+### Sub processo reutilizável: Verificar Sucesso
+ 
 ![BPMN - Sub processo reutilizável: Verificar Sucesso](../docs/imgs/BPMN-SverificaSucesso.jpg)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>

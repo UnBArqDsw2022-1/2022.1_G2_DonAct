@@ -61,6 +61,8 @@
             - [Realizar Doação](/Modelagem/2.1.2.UMLDinamicos?id=realizar-doação)
             - [Chat com ONG](/Modelagem/2.1.2.UMLDinamicos?id=chat-com-ong)
           - [2.1.2.1.2.3 Diagramação não Específico](/Modelagem/2.1.2.UMLDinamicos?id=_212123-diagramação-não-específico)
+            - [Cadastro](/Modelagem/2.1.2.UMLDinamicos?id=cadastro)
+            - [Login](/Modelagem/2.1.2.UMLDinamicos?id=login)
         - [2.1.2.1.3 Diagrama de Estados](/Modelagem/2.1.2.UMLDinamicos?id=_21213-diagrama-de-estados)
         - [2.1.2.1.4 Diagrama de Sequência](/Modelagem/2.1.2.UMLDinamicos?id=_21214-diagrama-de-sequência)
           - [Definição](/Modelagem/2.1.2.UMLDinamicos?id=_212111-definição)

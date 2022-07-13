@@ -10,10 +10,10 @@ O presente repositório tem como objetivo o auxílio e registro do processo de d
 | Matrícula  | Aluno                                    | Github                                                |
 | ---------- | ---------------------------------------- | ----------------------------------------------------- |
 | 19/0044799 | Antonio Ferreira de Castro Neto          | [antoniotoineto](https://github.com/antoniotoineto)   |
-| 18/0118005 | Carlos Rafael Vasconcelos de Matos       | [carloszoft](https://github.com/carloszoft)           |
 | 18/0099353 | Cibele Freitas Goudinho                  | [CibeleG](https://github.com/CibeleG)                 |
 | 18/0119818 | Felipe Boccardi Silva Agustini           | [fealps](https://github.com/fealps)                   |
 | 18/0122606 | Isadora da Cruz Galvão dos Santos Soares | [isadoragalvaoss](https://github.com/isadoragalvaoss) |
+| 18/0103792 | Julia Farias Sousa                       | [julisous](https://github.com/julisous)               |
 | 19/0033681 | Luiz Henrique Fernandes Zamprogno        | [luiz-herique](https://github.com/luiz-herique)       |
 | 18/0130889 | Sávio Cunha de Carvalho                  | [savioc2](https://github.com/savioc2)                 |
 | 19/0020601 | Victor Buendia Cruz de Alvim             | [Victor-Buendia](https://github.com/Victor-Buendia)   |

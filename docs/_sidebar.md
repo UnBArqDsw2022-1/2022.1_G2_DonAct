@@ -85,6 +85,7 @@
       - [2.2.3 Papéis e reuniões na Metodologia Ágil](/Modelagem/2.2.IniciativasExtras?id=_223-papéis-e-reuniões-na-metodologia-Ágil)
       - [2.2.4 Validação do protótipo](/Modelagem/2.2.IniciativasExtras?id=_224-validação-do-protótipo)
       - [2.2.5 Roadmap](/Modelagem/2.2.IniciativasExtras?id=_225-roadmap)
+      - [2.2.6 Apêndice](/Modelagem/2.2.IniciativasExtras?id=_226-apêndice)
     - [2.3. Participações - Modelagem](/Modelagem/2.3.ParticipacoesModelagem.md)
 
 - **[M3] Padrões de Projeto**

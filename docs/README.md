@@ -21,7 +21,7 @@
 | 18/0145363 | Yan Andrade de Sena                      | [yandrade1305](https://github.com/yandrade1305)       |
 
 ## Sobre 
-]<p align="justify">&emsp;&emsp;O projeto Donact será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.</p>
+<p align="justify">&emsp;&emsp;O projeto Donact será uma aplicação Web com o objetivo de facilitar o processo de doação de vários itens para pessoas carentes, para isso será feita a ligação dos doadores de certo tipo de item com as ONG's que precisam daquele item. Para isso será necessário a realização do cadastro por parte tanto do doador quanto das ONG's.</p>
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 
@@ -56,7 +56,18 @@
 ![BPMN - Sub processo reutilizável: Verificar Sucesso](/imgs/BPMN-SverificaSucesso.jpg)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+
+### Diagrama de Classes
+![Diagrama de Classes](../imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
+<p align="center">
+    <i>Imagem 1: Diagrama de Classes</i>
+</p>
+
+### Diagrama de Estados
+![Diagrama de estados cadastro](../imgs/cadastro.jpg)
+
+### Diagrama de Sequência
+![Diagrama de sequencia - fluxo de cadastro de usuário](../imgs/DS_cadastro.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
@@ -65,9 +76,9 @@ Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Ent
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Descritivo dos Principais Aspectos Técnicos 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: Scrum, Método Kanban e XP<br>
 **Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: Front-end em React.Js, Back-end em Express.js, Banco de Dados em MySQL e com uso de Docker<br>
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?

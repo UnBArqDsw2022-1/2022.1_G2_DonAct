@@ -58,16 +58,13 @@
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 
 ### Diagrama de Classes
-![Diagrama de Classes](../imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
-<p align="center">
-    <i>Imagem 1: Diagrama de Classes</i>
-</p>
+![Diagrama de Classes](/imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
 
 ### Diagrama de Estados
-![Diagrama de estados cadastro](../imgs/cadastro.jpg)
+![Diagrama de estados cadastro](/imgs/cadastro.jpg)
 
 ### Diagrama de Sequência
-![Diagrama de sequencia - fluxo de cadastro de usuário](../imgs/DS_cadastro.png)
+![Diagrama de sequencia - fluxo de cadastro de usuário](/imgs/DS_cadastro.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.

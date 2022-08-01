@@ -56,7 +56,14 @@ O projeto Donact será uma aplicação Web com o objetivo de facilitar o process
 ![BPMN - Sub processo reutilizável: Verificar Sucesso](/docs/imgs/BPMN-SverificaSucesso.jpg)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+### Diagrama de Classes
+![Diagrama de Classes](/docs/imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
+
+### Diagrama de Estados
+![Diagrama de estados cadastro](/docs/imgs/cadastro.jpg)
+
+### Diagrama de Sequência
+![Diagrama de sequencia - fluxo de cadastro de usuário](/docs/imgs/DS_cadastro.png)
 
 OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
@@ -67,9 +74,9 @@ Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Ent
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Descritivo dos Principais Aspectos Técnicos 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: Scrum, Método Kanban e XP<br>
 **Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: Front-end em React.Js, Back-end em Express.js, Banco de Dados em MySQL e com uso de Docker<br>
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?

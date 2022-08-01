@@ -95,6 +95,10 @@
 - **[M3] Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadroesDeProjeto.md)
     - [3.1. Módulo Padrões de Projeto GRASPs](/PadroesDeProjeto/3.1.GRASPs.md)
+      - [3.1.1. GRASP](/PadroesDeProjeto/3.1.GRASPs?id=_311-grasp)
+        - [3.1.1.1. Introdução](/PadroesDeProjeto/3.1.GRASPs?id=_3111-introdução)
+        - [3.1.1.2. GRASP Criador](/PadroesDeProjeto/3.1.GRASPs?id=_3112-grasp-criador)
+        - [3.1.1.2. GRASP Especialista](/PadroesDeProjeto/3.1.GRASPs?id=_3112-grasp-especialista)
     - [3.2. Módulo Padrões de Projeto GoFs](/PadroesDeProjeto/3.2.GoFs.md)
     - [3.3. Modelagem Ágil](/PadroesDeProjeto/3.3.PadroesExtra.md)
     - [3.4. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.4.IniciativasExtras.md)

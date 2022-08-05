@@ -106,13 +106,15 @@
         - [3.2.1.2. Builder](/PadroesDeProjeto/3.2.GoFs?id=_3212-builder)
       - [3.2.2. GoFs Estruturais](/PadroesDeProjeto/3.2.GoFs?id=_322-gofs-estruturais)
         - [3.2.2.1. Composite](/PadroesDeProjeto/3.2.GoFs?id=_3221-composite)
+        - [3.2.2.2. Adapter](/PadroesDeProjeto/3.2.GoFs?id=_3222-adapter)
       - [3.2.3. GoFs Comportamentais](/PadroesDeProjeto/3.2.GoFs?id=_323-gofs-comportamentais)
         - [3.2.3.1 GoF Strategy](/PadroesDeProjeto/3.2.GoFs?id=_3231-gof-strategy)
-    - [3.3. Modelagem Ágil](/PadroesDeProjeto/3.3.PadroesExtra.md)
+    - [3.3. Módulo Padrões de Projeto Extras](/PadroesDeProjeto/3.3.PadroesExtra.md)
       - [3.3.1. MVC - Model (modelo) View (visão) Controller (Controle)](/PadroesDeProjeto/3.3.PadroesExtra?id=_331-mvc-model-modelo-view-visão-controller-controle)
       - [3.3.2. N-tier Architecture (arquitetura multicamada)](/PadroesDeProjeto/3.3.PadroesExtra?id=_332-n-tier-architecture-arquitetura-multicamada)
     - [3.4. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.4.IniciativasExtras.md)
       - [3.4.1 Políticas de contribuição](/PadroesDeProjeto/3.4.IniciativasExtras?id=_341-políticas-de-contribuição)
+      - [3.4.2 Refinamento Diagrama de classes](/PadroesDeProjeto/3.4.IniciativasExtras?id=_342-diagrama-de-classes)
     - [3.5. Participações - Padrões de Projeto](/PadroesDeProjeto/3.5.ParticipacoesPadroes.md)
 
 - **[M4] Arquitetura de Software & Reutilização**

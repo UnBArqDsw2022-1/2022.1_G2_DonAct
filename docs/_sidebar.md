@@ -100,6 +100,8 @@
         - [3.1.1.2. GRASP Criador](/PadroesDeProjeto/3.1.GRASPs?id=_3112-grasp-criador)
         - [3.1.1.3. GRASP Especialista](/PadroesDeProjeto/3.1.GRASPs?id=_3113-grasp-especialista)
         - [3.1.1.4. GRASP de Alta Coesão](/PadroesDeProjeto/3.1.GRASPs?id=_3114-grasp-de-alta-coesão)
+        - [3.1.1.5. GRASP de Baixo Acoplamento](/PadroesDeProjeto/3.1.GRASPs?id=_3115-grasp-de-baixo-acoplamento)
+        - [3.1.1.6. GRASP de Polimorfismo](/PadroesDeProjeto/3.1.GRASPs?id=_3116-grasp-de-polimorfismo)
     - [3.2. Módulo Padrões de Projeto GoFs](/PadroesDeProjeto/3.2.GoFs.md)
       - [3.2.1. GoFs Criacionais](/PadroesDeProjeto/3.2.GoFs?id=_321-gofs-criacionais)
         - [3.2.1.1. Factory Method](/PadroesDeProjeto/3.2.GoFs?id=_3211-factory-method)

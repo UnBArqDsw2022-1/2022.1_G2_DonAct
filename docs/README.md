@@ -93,16 +93,10 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ## Comandos
 
-### 🎲 Rodando o Back End (servidor)
+## O Projeto está rodando?
+( ) SIM  
+(x) NÃO  
+Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.  
 
-```bash
-# Clone este repositório
-$ git clone <hhttps://github.com/UnBArqDsw2022-1/2022.1_G2_DonAct.git>
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
-
-# Vá para a pasta server
-$ cd server
-
-
+## Informações Complementares 
+Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.

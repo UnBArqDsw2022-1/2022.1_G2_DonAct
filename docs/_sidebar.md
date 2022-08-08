@@ -111,6 +111,7 @@
         - [3.2.2.2. Adapter](/PadroesDeProjeto/3.2.GoFs?id=_3222-adapter)
       - [3.2.3. GoFs Comportamentais](/PadroesDeProjeto/3.2.GoFs?id=_323-gofs-comportamentais)
         - [3.2.3.1 GoF Strategy](/PadroesDeProjeto/3.2.GoFs?id=_3231-gof-strategy)
+        - [3.2.3.1 GoF Template Method](/PadroesDeProjeto/3.2.GoFs?id=_3231-gof-template-method)
     - [3.3. Módulo Padrões de Projeto Extras](/PadroesDeProjeto/3.3.PadroesExtra.md)
       - [3.3.1. MVC - Model (modelo) View (visão) Controller (Controle)](/PadroesDeProjeto/3.3.PadroesExtra?id=_331-mvc-model-modelo-view-visão-controller-controle)
       - [3.3.2. N-tier Architecture (arquitetura multicamada)](/PadroesDeProjeto/3.3.PadroesExtra?id=_332-n-tier-architecture-arquitetura-multicamada)

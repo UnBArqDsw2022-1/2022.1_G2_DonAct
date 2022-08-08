@@ -79,9 +79,30 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?
-( ) SIM  
-(x) NÃO  
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.  
+(X) SIM  
+( ) NÃO  
 
-## Informações Complementares 
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
+## 🚀 Começando
+### 📋 Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+
+[Node.js](https://nodejs.org/en/)
+
+[VSCode](https://code.visualstudio.com/)
+
+
+## Comandos
+
+### 🎲 Rodando o Back End (servidor)
+
+```bash
+# Clone este repositório
+$ git clone <hhttps://github.com/UnBArqDsw2022-1/2022.1_G2_DonAct.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd nlw1
+
+# Vá para a pasta server
+$ cd server
+
+

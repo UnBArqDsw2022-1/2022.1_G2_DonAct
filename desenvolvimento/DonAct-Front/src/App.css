@@ -1,17 +1,22 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App {
+  text-align: center;
+}
+.App-background{
+  background-color: #D8CBC7;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-link {
+  color: #24572c;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -24,6 +29,17 @@
   color: white;
 }
 
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.outer .form-control:focus {
+  border-color: #D8CBC7;
+  box-shadow: none;
+}
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +52,17 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-primary{
+  background-color: #502223;
+  color: #FFF;
+  border-color: #502223;
+
+}
+  .btn-primary:hover{
+  background-color: #9D7B7B;
+  color: #FFF;
+  border-color: #502223;
+
+  }
+

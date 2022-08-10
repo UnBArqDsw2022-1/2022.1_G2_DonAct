@@ -1,11 +1,14 @@
-version: '3'
-services: 
-  front:
-    build: .
-    volumes: 
-      - '.:/app'
-      - '/app/node_modules'
-    ports: 
-      - '3001:3000'
-    environment:
+version: '3.7'
+services:
+    app:
+        container_name: DonAct-Front
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - '.:/app'
+            - '/app/node_modules'
+        ports:
+            - '3001:3000'
+        environment:
             - NODE_ENV=development

@@ -105,6 +105,9 @@ $ cd desenvolvimento
 
 # Vá para a pasta DonAct-API
 $ cd DonAct-API
+
+# Rode o docker
+$ cd docker-compose up --build
 ```
 
 ### ✨ Rodando o Front End
@@ -118,4 +121,7 @@ $ cd desenvolvimento
 
 # Vá para a pasta DonAct-API
 $ cd DonAct-Front
+
+# Rode o docker
+$ cd docker-compose up --build
 ```

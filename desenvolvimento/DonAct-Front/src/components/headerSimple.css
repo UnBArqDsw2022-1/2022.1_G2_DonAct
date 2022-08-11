@@ -1,0 +1,21 @@
+.Header-container{
+    width: 100vw;
+    height: 10vh;
+    background-color: #653C3D;
+    cursor: default;
+  
+}
+
+.Header-container #logo{
+    width:10vw;
+    height:10vh;
+    cursor: default;
+}
+
+.Header-container #sino{
+    width:5vw;
+    height:5vh;
+    cursor: default;
+    float:right;
+    padding-top: 2vh;
+}

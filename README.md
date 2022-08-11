@@ -106,6 +106,11 @@ $ cd desenvolvimento
 # Vá para a pasta DonAct-API
 $ cd DonAct-API
 
+# Execute:
+$ npm install --save sequelize
+$ npm install --save mysql2
+$ npm i dotenv
+
 # Rode o docker
 $ cd docker-compose up --build
 ```

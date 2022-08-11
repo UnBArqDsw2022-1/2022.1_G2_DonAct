@@ -100,6 +100,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 # Clone este repositório
 $ git clone <hhttps://github.com/UnBArqDsw2022-1/2022.1_G2_DonAct.git>
 
+# Acesse essa branch
+$ git checkout "11-CadastroONG-Back"
+
 # Acesse a pasta do projeto no terminal/cmd
 $ cd desenvolvimento
 
@@ -107,11 +110,16 @@ $ cd desenvolvimento
 $ cd DonAct-API
 
 # Execute:
+$ yarn add nodemon
 $ npm install --save sequelize
 $ npm install --save mysql2
 $ npm i dotenv
 
-# Rode o docker
+# Rode o ambiente
+$ cd src
+$ nodemon server.js
+
+# Rode o docker (com o docker não tá indo :/)
 $ cd docker-compose up --build
 ```
 

@@ -120,7 +120,7 @@ $ cd ..
 $ yarn add nodemon
 
 # Dê o build e suba o docker
-$ cd docker-compose up --build
+$ sudo docker-compose up --build
 ```
 
 ### ✨ Rodando o Front End

@@ -76,67 +76,67 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
 ### GRASP Criador
 
-![GRASP Criador](docs/imgs/GRASP_Criador_1.png)
+![GRASP Criador](/imgs/GRASP_Criador_1.png)
 
 ### GRASP Especialista
 
-![GRASP Especialista](docs/imgs/GRASP_Especialista.png)
+![GRASP Especialista](/imgs/GRASP_Especialista.png)
 
 ### GRASP de Alta Coesão
 
-![GRASP de Alta Coesão](docs/imgs/Grasp-Alta-Coesao-Projeto.png)
+![GRASP de Alta Coesão](/imgs/Grasp-Alta-Coesao-Projeto.png)
 
 ### GRASP de Baixo Acoplamento
 
-![GRASP de Baixo Acoplamento](docs/imgs/Grasp-Baixo-Acoplamento-Projeto.png)
+![GRASP de Baixo Acoplamento](/imgs/Grasp-Baixo-Acoplamento-Projeto.png)
 
 ### GRASP de Polimorfismo
 
-![GRASP de Polimorfismo](docs/imgs/Grasp_Coesao_Acop_Pol.png)
+![GRASP de Polimorfismo](/imgs/Grasp_Coesao_Acop_Pol.png)
 
 ### GoFs Criacionais (Factory Method)
 
-![Factory Method](docs/imgs/Factory%20Method.jpeg)
+![Factory Method](/imgs/Factory%20Method.jpeg)
 
 ### GoFs Criacionais (Builder)
 
-![Builder](docs/imgs/Builder.png)
+![Builder](/imgs/Builder.png)
 
 ### GoFs Estruturais (Composite)
 
-![Composite](docs/imgs/Composite_aplicado.png)
+![Composite](/imgs/Composite_aplicado.png)
 
 ### GoFs Comportamentais (GoF Strategy)
 
-![Strategy](docs/imgs/GoFComportamental.png)
+![Strategy](/imgs/GoFComportamental.png)
 
 ### GoFs Comportamentais (GoF Template Method)
 
-![Template Method](docs/imgs/TemplateMethod.png)
+![Template Method](/imgs/TemplateMethod.png)
 
 ### Padrões Emergentes (MVC)
 
-![MVC](docs/imgs/mvc.jpg)
+![MVC](/imgs/mvc.jpg)
 
 ### Padrões Emergentes (N-tier)
 
-![N-tier](docs/imgs/n-tier.jpg)
+![N-tier](/imgs/n-tier.jpg)
 
 ### Iniciativas extras (Políticas de contribuição)
 
-![Políticas de Contribuição](docs/imgs/politicas_de_contribuicao.png)
+![Políticas de Contribuição](/imgs/politicas_de_contribuicao.png)
 
 ### Iniciativas extras (Diagrama de classes refinado)
 
-![Diagrama de classes refinado](docs/imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
+![Diagrama de classes refinado](/imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
 
 ### Iniciativas extras (Novo Modelo de Avaliação)
 
-![Novo Modelo de Avaliação](docs/imgs/novo_modelo_de_avaliacao.png)
+![Novo Modelo de Avaliação](/imgs/novo_modelo_de_avaliacao.png)
 
 ### Iniciativas extras (Documentação daily Sprints)
 
-![Documentação daily Sprints](docs/imgs/documentao_daily_Sprints.png)
+![Documentação daily Sprints](/imgs/documentao_daily_Sprints.png)
 
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>

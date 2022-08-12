@@ -100,9 +100,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 # Clone este repositório
 $ git clone <hhttps://github.com/UnBArqDsw2022-1/2022.1_G2_DonAct.git>
 
-# Acesse essa branch
-$ git checkout "11-CadastroONG-Back"
-
 # Acesse a pasta do projeto no terminal/cmd
 $ cd desenvolvimento
 

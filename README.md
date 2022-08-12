@@ -110,10 +110,10 @@ $ cd DonAct-API
 $ yarn add nodemon
 
 # Renomeie example.env para .env
-$ mv example.env .env
+$ mv src/example.env .env
 
 # Preencha as variáveis de ambiente (.env)
-$ Solicitar à equipe
+$ Solicitar variáveis à equipe
 
 # Rode o docker
 $ cd docker-compose up --build

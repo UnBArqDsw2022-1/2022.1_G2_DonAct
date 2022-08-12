@@ -179,8 +179,21 @@ $ cd desenvolvimento
 # Vá para a pasta DonAct-API
 $ cd DonAct-API
 
-# Rode o docker
-$ cd docker-compose up --build
+# Vá para a pasta src
+$ cd src
+
+# Crie o .env
+$ Crie um arquivo com o nome ".env" e o preencha com as variáveis de ambiente
+Obs.: Solicitar variáveis à equipe
+
+# Volte para a pasta anterior
+$ cd ..
+
+# Execute:
+$ yarn add nodemon
+
+# Dê o build e suba o docker
+$ sudo docker-compose up --build
 ```
 
 ### ✨ Rodando o Front End

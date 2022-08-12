@@ -6,7 +6,6 @@ module.exports = {
     },
     cadastrar: async (req, res) => {
       await Ong.create(req.body)
-      console.log(req.body)
       res.send("Cadastrado com sucesso!")
     },/*
     editar: async (req, res) => {

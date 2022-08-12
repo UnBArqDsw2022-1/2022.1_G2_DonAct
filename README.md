@@ -111,15 +111,8 @@ $ cd DonAct-API
 
 # Execute:
 $ yarn add nodemon
-$ npm install --save sequelize
-$ npm install --save mysql2
-$ npm i dotenv
 
-# Rode o ambiente
-$ cd src
-$ nodemon server.js
-
-# Rode o docker (com o docker não tá indo :/)
+# Rode o docker
 $ cd docker-compose up --build
 ```
 

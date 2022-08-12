@@ -138,6 +138,10 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
 ![Documentação daily Sprints](/imgs/documentao_daily_Sprints.png)
 
+### Iniciativas extras (MVP - Minimo produto viavel)
+![MVP - tela de login](/imgs/mvp-login.png)
+![MVP - tela de escolha de usuário](/imgs/mvp-choice.png)
+![MVP - tela de registro de doador](/imgs/mvp-donor.png)
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 

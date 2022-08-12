@@ -4,7 +4,7 @@ WORKDIR /usr/app
 
 COPY package*.json ./
 
-RUN npm add nodemon
+RUN yarn add nodemon
 RUN npm install --save sequelize
 RUN npm install --save mysql2
 RUN npm i dotenv

@@ -4,10 +4,13 @@ WORKDIR /usr/app
 
 COPY package*.json ./
 
-RUN yarn 
+RUN yarn add nodemon
+RUN npm install --save sequelize
+RUN npm install --save mysql2
+RUN npm i dotenv
 
-COPY . . 
+COPY . .
 
 EXPOSE 3000
 
-CMD yarn start
+CMD [ "npm", "start" ]

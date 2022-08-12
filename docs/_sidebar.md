@@ -118,6 +118,8 @@
     - [3.4. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.4.IniciativasExtras.md)
       - [3.4.1 Políticas de contribuição](/PadroesDeProjeto/3.4.IniciativasExtras?id=_341-políticas-de-contribuição)
       - [3.4.2 Refinamento Diagrama de classes](/PadroesDeProjeto/3.4.IniciativasExtras?id=_342-diagrama-de-classes)
+      - [3.4.3 Documentação daily Sprints](/PadroesDeProjeto/3.4.IniciativasExtras?id=_343-documentação-daily-sprints)
+      - [3.4.4 Novo Modelo de Avaliação](/PadroesDeProjeto/3.4.IniciativasExtras?id=_344-novo-modelo-de-avaliação)
     - [3.5. Participações - Padrões de Projeto](/PadroesDeProjeto/3.5.ParticipacoesPadroes.md)
 
 - **[M4] Arquitetura de Software & Reutilização**

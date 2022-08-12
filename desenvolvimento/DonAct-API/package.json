@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "cd src && nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

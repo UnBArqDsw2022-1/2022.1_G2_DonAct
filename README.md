@@ -82,9 +82,25 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
 ![GRASP Especialista](docs/imgs/GRASP_Especialista.png)
 
+### GRASP de Alta Coesão
+
+![GRASP de Alta Coesão](docs/imgs/Grasp-Alta-Coesao-Projeto.png)
+
+### GRASP de Baixo Acoplamento
+
+![GRASP de Baixo Acoplamento](docs/imgs/Grasp-Baixo-Acoplamento-Projeto.png)
+
+### GRASP de Polimorfismo
+
+![GRASP de Polimorfismo](docs/imgs/Grasp_Coesao_Acop_Pol.png)
+
 ### GoFs Criacionais (Factory Method)
 
 ![Factory Method](docs/imgs/Factory%20Method.jpeg)
+
+### GoFs Criacionais (Builder)
+
+![Builder](docs/imgs/Builder.png)
 
 ### GoFs Estruturais (Composite)
 
@@ -93,6 +109,35 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 ### GoFs Comportamentais (GoF Strategy)
 
 ![Strategy](docs/imgs/GoFComportamental.png)
+
+### GoFs Comportamentais (GoF Template Method)
+
+![Template Method](docs/imgs/TemplateMethod.png)
+
+### Padrões Emergentes (MVC)
+
+![MVC](docs/imgs/mvc.jpg)
+
+### Padrões Emergentes (N-tier)
+
+![N-tier](docs/imgs/n-tier.jpg)
+
+### Iniciativas extras (Políticas de contribuição)
+
+![Políticas de Contribuição](docs/imgs/politicas_de_contribuicao.png)
+
+### Iniciativas extras (Diagrama de classes refinado)
+
+![Diagrama de classes refinado](docs/imgs/DonAct%20-%20Diagrama%20de%20Classes.png)
+
+### Iniciativas extras (Novo Modelo de Avaliação)
+
+![Novo Modelo de Avaliação](docs/imgs/novo_modelo_de_avaliacao.png)
+
+### Iniciativas extras (Documentação daily Sprints)
+
+![Documentação daily Sprints](docs/imgs/documentao_daily_Sprints.png)
+
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
@@ -134,8 +179,21 @@ $ cd desenvolvimento
 # Vá para a pasta DonAct-API
 $ cd DonAct-API
 
-# Rode o docker
-$ cd docker-compose up --build
+# Vá para a pasta src
+$ cd src
+
+# Crie o .env
+$ Crie um arquivo com o nome ".env" e o preencha com as variáveis de ambiente
+Obs.: Solicitar variáveis à equipe
+
+# Volte para a pasta anterior
+$ cd ..
+
+# Execute:
+$ yarn add nodemon
+
+# Dê o build e suba o docker
+$ sudo docker-compose up --build
 ```
 
 ### ✨ Rodando o Front End

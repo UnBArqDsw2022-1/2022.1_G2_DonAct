@@ -173,24 +173,15 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 # Clone este repositório
 $ git clone https://github.com/UnBArqDsw2022-1/2022.1_G2_DonAct.git
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd desenvolvimento
+# Acesse a pasta de desenvolvimento do Back End
+$ cd 2022.1_G2_DonAct/desenvolvimento/DonAct-API
 
-# Vá para a pasta DonAct-API
-$ cd DonAct-API
-
-# Vá para a pasta src
-$ cd src
-
-# Crie o .env
-$ Crie um arquivo com o nome ".env" e o preencha com as variáveis de ambiente
+# Crie um arquivo com o nome ".env" e o preencha com as variáveis de ambiente
+$ cat > src/.env
 Obs.: Solicitar variáveis à equipe
 
-# Volte para a pasta anterior
-$ cd ..
-
 # Execute:
-$ yarn add nodemon
+$ npm install
 
 # Dê o build e suba o docker
 $ sudo docker-compose up --build

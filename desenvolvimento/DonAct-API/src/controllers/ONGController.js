@@ -5,17 +5,28 @@ module.exports = {
       res.send("Página Inicial")
     },
     cadastrar: async (req, res) => {
-      await Ong.create(req.body)
-      res.send("Cadastrado com sucesso!")
+      erro = false
+      try {
+        await Ong.create(req.body)
+      }
+      catch {
+        erro = true
+        res.send("Ocorreu um erro ao cadastrar!")
+      }
+      if(erro == false)
+        res.send("Cadastrado com sucesso!")
     },/*
     editar: async (req, res) => {
-      const jane = await User.create({ name: "Jane" });
-      jane.set({
-        name: "Ada",
-        favoriteColor: "blue"
+      await User.update({ lastName: "Doe" }, {
+        where: {
+          lastName: null
+        }
       });
-      await jane.save();
-    }*/
+    },*/
+    mostrar: async (req, res) => {
+      const users = await Ong.findAll();
+      res.send("All users:", JSON.stringify(users, null, 2));
+    },
     deletar: async(req, res) => {
       await Ong.destroy({
         where: {"cnpj":req.params.id},

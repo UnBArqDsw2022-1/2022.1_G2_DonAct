@@ -1,5 +1,4 @@
-const Doador = require('../models/Doador.js');
-
+const Doador = require('../models/DoadorModel');
 module.exports = {
     async createDoador(req, res) {
         const { fotoDePerfil, nome, telefone, email, endereco, cidade, estado, cep, senha, cpf, dataNascimento } = req.body
@@ -21,6 +20,5 @@ module.exports = {
         } catch (err) {
             return res.status(500).send({ error: err.message });
         }
-
     }
 }

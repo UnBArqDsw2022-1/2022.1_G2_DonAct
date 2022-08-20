@@ -1,9 +1,11 @@
 const express = require("express")
 const router = express.Router()
 const DoadorController = require("../controllers/DoadorController")
-//router.get("/", DoadorController.inicial)
-router.post("/cadastrar", DoadorController.createDoador)
-//router.delete("/:id/excluir", DoadorController.deletar)
+const Doador = require("../models/DoadorModel")
+router.get("/", DoadorController.inicial)
+router.get("/mostrar", DoadorController.mostrar)
+router.get("/encontrar/:id", DoadorController.encontrar)
+router.post("/cadastrar", DoadorController.cadastrar)
+router.delete("/excluir/:id", DoadorController.deletar)
+router.put("/editar/:id", DoadorController.editar)
 module.exports = router
-
-

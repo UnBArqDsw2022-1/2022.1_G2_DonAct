@@ -7,12 +7,12 @@ require('dotenv').config()
 app.use(express.json())
 
 app.use("/ong", ONGRouter)
-//app.use("/doador", DoadorRouter)
+app.use("/doador", DoadorRouter)
 
 const port = process.env.PORT || 8080
 
-app.listen(port, function() {
-    console.log("server listening on port 8080")
-  })
+app.listen(port, function () {
+  console.log("server listening on port 8080")
+})
 
 module.exports = app

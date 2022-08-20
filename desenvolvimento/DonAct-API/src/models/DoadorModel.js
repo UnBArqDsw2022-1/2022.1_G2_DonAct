@@ -7,24 +7,30 @@ const Doador = db.define('doador', {
     },
     nome: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        isAlphanumeric: {
+            msg: "Insira um nome válido sem caracteres especiais."
+        }
     },
     telefone: {
         type: Sequelize.STRING,
-        allowNull: false
+        is: {
+            args: ["^[0-9]+", 'i'],
+            msg: "Número de telefone inválido."
+        }
     },
-   
     email: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    unique: true,
-    validate: {
-    isEmail: {
-    msg: "Must be a valid email address",
-    }}
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: {
+            msg: "O email inserido já foi cadastrado."
+        },
+        validate: {
+            isEmail: {
+                msg: "O endereço de email é inválido.",
+            }
+        }
     },
-
-
     endereco: {
         type: Sequelize.STRING,
         allowNull: false
@@ -44,11 +50,19 @@ const Doador = db.define('doador', {
     cpf: {
         type: Sequelize.STRING,
         allowNull: false,
-        primaryKey: true
+        primaryKey: {
+            msg: "O CPF inserido já foi cadastrado."
+        },
+        unique: {
+            msg: "O CPF inserido já foi cadastrado."
+        }
     },
     dataNascimento: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        isDate: {
+            msg: "Data de nascimento inválida."
+        }
     }
 })
 

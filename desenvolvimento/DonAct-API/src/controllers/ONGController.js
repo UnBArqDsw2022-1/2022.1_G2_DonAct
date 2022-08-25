@@ -17,6 +17,8 @@ module.exports = {
       if (cnpjValido.status == "ERROR") {
         res.send("O CNPJ inserido não está na Receita Federal!")
       }
+      else if (cnpjValido.capital_social != 0)
+        res.send("A instituição possui fins lucrativos!")
       else if (select == null) {
         await Ong.create(req.body)
         res.send(`Cadastrado com sucesso! ONG: ${cnpjValido.nome}`)

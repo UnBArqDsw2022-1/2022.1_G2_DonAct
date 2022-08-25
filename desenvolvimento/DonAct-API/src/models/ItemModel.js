@@ -17,7 +17,7 @@ const Item = db.define('itens',{
         allowNull: true
     },
     quantidade: {
-        type: Sequelize.INT,
+        type: Sequelize.INTEGER,
         allowNull: false
     },
     foto: {

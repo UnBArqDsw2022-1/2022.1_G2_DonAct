@@ -1,23 +1,39 @@
+const axios = require('axios').default;
 const Ong = require("../models/ONGModel")
 
 module.exports = {
-    inicial: async (req, res) => {
-      res.send("Página Inicial")
-    },
-    cadastrar: async (req, res) => {
+  inicial: async (req, res) => {
+    res.send("Página Inicial")
+  },
+  cadastrar: async (req, res) => {
+    try {
+      const receitaFederal = await axios.get(`https://receitaws.com.br/v1/cnpj/${req.body.cnpj}`);
+      const cnpjValido = {
+        "status": receitaFederal.data.status,
+        "nome": receitaFederal.data.nome,
+        "capital_social": Number(receitaFederal.data.capital_social)
+      }
       const select = await Ong.findByPk(req.body.cnpj)
-      if(select == null) {
-        await Ong.create(req.body) 
-        res.send("Cadastrado com sucesso!")
+      if (cnpjValido.status == "ERROR") {
+        res.send("O CNPJ inserido não está na Receita Federal!")
+      }
+      else if (select == null) {
+        await Ong.create(req.body)
+        res.send(`Cadastrado com sucesso! ONG: ${cnpjValido.nome}`)
       }
       else
-        res.send("Já foi cadastrado um usuário com esse cnpj!")
-    },
-    editar: async (req, res) => {
-      const select = await Ong.findByPk(req.params.id)
-      if(select != null) { 
-        await Ong.update(
-          {
+        res.send("Já foi cadastrado um usuário com esse CNPJ!")
+    }
+    catch (e) {
+      res.send("Erro na validação do CNPJ!");
+    }
+
+  },
+  editar: async (req, res) => {
+    const select = await Ong.findByPk(req.params.id)
+    if (select != null) {
+      await Ong.update(
+        {
           "cnpj": req.body.cnpj,
           "fotoDePerfil": req.body.fotoDePerfil,
           "nome": req.body.nome,
@@ -32,27 +48,27 @@ module.exports = {
           "emailDoResponsavel": req.body.emailDoResponsavel
         },
         {
-          where: {"cnpj": req.params.id},
+          where: { "cnpj": req.params.id },
           truncate: false,
         });
-        res.send("Usuário editado com sucesso!")
-      }
-      else
-        res.send("Usuário não encontrado!")
-    },
-    mostrar: async (req, res) => {
-      const users = await Ong.findAll();
-      res.send(users);
-    },
-    deletar: async(req, res) => {
-      const select = await Ong.findByPk(req.params.id)
-      if(select != null) {
-        await Ong.destroy({
-          where: {"cnpj":req.params.id},
-          truncate: false,
-        }, res.send("Deletado com sucesso"))
-      }
-      else
-        res.send("Usuário não encontrado!")
+      res.send("Usuário editado com sucesso!")
     }
+    else
+      res.send("Usuário não encontrado!")
+  },
+  mostrar: async (req, res) => {
+    const users = await Ong.findAll();
+    res.send(users);
+  },
+  deletar: async (req, res) => {
+    const select = await Ong.findByPk(req.params.id)
+    if (select != null) {
+      await Ong.destroy({
+        where: { "cnpj": req.params.id },
+        truncate: false,
+      }, res.send("Deletado com sucesso"))
+    }
+    else
+      res.send("Usuário não encontrado!")
   }
+}

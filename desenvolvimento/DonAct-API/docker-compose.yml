@@ -1,12 +1,12 @@
 version: '3'
 
-services: 
-  app: 
+services:
+  app:
     build: .
     command: npm start
-    ports: 
+    ports:
       - '8080:8080'
-    volumes: 
+    volumes:
       - .:/usr/app
 
   db:
@@ -14,8 +14,8 @@ services:
     image: mysql:5.7.31
     command: --default-authentication-plugin=mysql_native_password --sql_mode=NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER --explicit_defaults_for_timestamp
     restart: always
-    ports: 
+    ports:
       - '3309:3306'
-    environment: 
+    environment:
       - MYSQL_ROOT_PASSWORD=root
       - TZ=Brasilia/DF

@@ -1,17 +1,36 @@
+const axios = require('axios').default;
 const Ong = require("../models/ONGModel")
 
 module.exports = {
   inicial: async (req, res) => {
     res.send("Página Inicial")
   },
-  cadastrar: async (req, res) => {
-    await Ong.create(req.body)
-    .then(function() {
-      res.send("Ong cadastrada com sucesso!")
-    })
-    .catch(function(err) {
-      res.send(err)
-    })
+  cadastrar: async (req, res) => { 
+    try {
+      const receitaFederal = await axios.get(`https://receitaws.com.br/v1/cnpj/${req.body.cnpj}`);
+      const cnpjValido = {
+        "status": receitaFederal.data.status,
+        "nome": receitaFederal.data.nome,
+        "capital_social": Number(receitaFederal.data.capital_social)
+      }
+      if (cnpjValido.status == "ERROR") {
+        res.send("O CNPJ inserido não está na Receita Federal!")
+      }
+      else if (cnpjValido.capital_social != 0)
+        res.send("A instituição possui fins lucrativos!")
+      else (select == null) {
+        await Ong.create(req.body)
+        .then(function() {
+          res.send("Ong cadastrada com sucesso!")
+        })
+        .catch(function(err) {
+          res.send(err)
+        })
+      }
+    }
+    catch (e) {
+      res.send("Erro na validação do CNPJ!");
+    }
   },
   editar: async (req, res) => {
     await Ong.update({
@@ -39,7 +58,7 @@ module.exports = {
         res.send(err)
       })
     
-  }, 
+  },
   mostrar: async (req, res) => {
     const users = await Ong.findAll();
     res.send(users);

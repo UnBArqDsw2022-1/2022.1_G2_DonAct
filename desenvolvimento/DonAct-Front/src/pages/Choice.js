@@ -1,4 +1,5 @@
 import React from "react";
+import {Link } from "react-router-dom";
 import "../styles/choice.css";
 import Logo from "../assets/logo.svg";
 
@@ -28,12 +29,14 @@ const Choice = () => (
             <div class="vl"></div>
           </div>
           <div className="btn-tag ">
+          <Link to="/donor">
             <button
               type="submit"
               className="btn btn-dark btn-lg btn-block btn-primary btn-choice"
             >
               Sou um Doador
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,38 +1,47 @@
-import React from "react";
-import "../styles/choice.css";
-import "../styles/donor.css";
+import React, { useEffect, useState } from "react";
+
+import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+
 import Logo from "../assets/logo.svg";
 import Arrow from "../assets/arrow.svg";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import { useFormik } from "formik";
 import validateSchema from "../hooks/validateSchema";
+import { handlePostDoador } from "../Api";
 
-const SignUp = () => {
-  const formik = useFormik({
-    initialValues: {
-      nome: "",
-      cpf: "",
-      dataN: "",
-      telefone: "",
-      email: "",
-      cep: "",
-      cidade: "",
-      uf: "",
-      endereco: "",
-      senha: "",
-      senha2: "",
-    },
-    validationSchema: validateSchema(),
-    onSubmit: (values) => {
-      console.log(JSON.stringify(values, null, 2));
-    },
+import "../styles/choice.css";
+import "../styles/donor.css";
+    
+  const SignUp = () => {
+    const formik = useFormik({
+      initialValues: {
+        nome: "",
+        cpf: "",
+        dataN: "",
+        telefone: "",
+        email: "",
+        cep: "",
+        cidade: "",
+        uf: "",
+        endereco: "",
+        senha: "",
+        senha2: "",
+      },
+      validationSchema: validateSchema(),
+      onSubmit: (values) => {
+        console.log(JSON.stringify(values, null, 2));
+      },
   });
 
   return (
     <>
       <div>
-        <img className="arrow" src={Arrow} alt=""></img>
+      <Link to="/choice">
+        <a href="">
+          <img className="arrow" src={Arrow} alt=""></img>
+        </a>
+        </Link>
       </div>
       <div className="inner inner-choice ">
         <div className="form">
@@ -256,7 +265,7 @@ const SignUp = () => {
                         Ao se cadastrar você concorda com o Termo de Uso e a
                         Política de Privacidade do Donact
                       </p>
-                      <Button text="Cadastrar" />
+                      <Button text="Cadastrar" onClick={handlePostDoador(formik.values)}/>
                     </div>
                   </div>
                   <div className="label-login">* Campos obrigatórios</div>

@@ -22,14 +22,30 @@ module.exports = {
       res.send("A instituição possui fins lucrativos!")
       CNPJvalido = false
     }
-      
     if (CNPJvalido == true) {
       await Ong.create(req.body)
       .then(function() {
         res.send("Ong cadastrada com sucesso!")
       })
       .catch(function(err) {
-        res.send(err)
+        var erro = err.errors[0].message
+        switch (erro) {
+          case "PRIMARY must be unique":
+            res.send("CNPJ já cadastrado!")
+            break;
+          case "telefone must be unique":
+            res.send("Telefone já cadastrado!")
+            break;
+          case "email must be unique":
+            res.send("Email já cadastrado!")
+            break;
+          case "emailDoResponsavel must be unique":
+            res.send("Email do responsável já cadastrado!")
+            break;
+          default:
+            res.send("Não foi possível realizar o cadastro!")
+            break;
+        }
       })
     }
   },
@@ -72,8 +88,25 @@ module.exports = {
           res.send("Usuário editado com sucesso!")
         })
         .catch(function(err) {
-          res.send(err)
-        })
+          var erro = err.errors[0].message
+          switch (erro) {
+            case "PRIMARY must be unique":
+              res.send("CNPJ já cadastrado!")
+              break;
+            case "telefone must be unique":
+              res.send("Telefone já cadastrado!")
+              break;
+            case "email must be unique":
+              res.send("Email já cadastrado!")
+              break;
+            case "emailDoResponsavel must be unique":
+              res.send("Email do responsável já cadastrado!")
+              break;
+            default:
+              res.send("Não foi possível realizar o cadastro!")
+              break;
+          }
+      })
     }
   },
   mostrar: async (req, res) => {

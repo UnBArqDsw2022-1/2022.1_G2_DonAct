@@ -1,7 +1,9 @@
 const Sequelize = require('sequelize')
 const db = require('../config/db')
+const Item = require('../models/ItemModel.js');
+const Ong = require('../models/ONGModel')
 
-const AcaoSocial = db.define('doacao',{
+const AcaoSocial = db.define('doacao', {
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
@@ -26,16 +28,27 @@ const AcaoSocial = db.define('doacao',{
         allowNull: false
 
     },
-    itens: {
-        //type: Sequelize.ARRAY.toString
-
-
-    },
-    ong :{
-
-    }
+    // itens: {
+    //     type: Sequelize.STRING,
+    //     allowNull: false,
+    //     get() {
+    //         return this.getDataValue('itens').split(';')
+    //     },
+    //     set(val) {
+    //         this.setDataValue('itens', val.join(';'));
+    //     },
+    // },
+    // ong: {
+    //     type: 
+    // }
 
 })
+
+AcaoSocial.hasMany(Item)
+Item.belongsTo(AcaoSocial)
+
+AcaoSocial.belongsTo(Ong)
+Ong.hasMany(AcaoSocial)
 
 AcaoSocial.sync()
 

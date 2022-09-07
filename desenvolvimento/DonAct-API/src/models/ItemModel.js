@@ -30,6 +30,4 @@ const Item = db.define('itens', {
 
 })
 
-// Item.sync()
-
 module.exports = Item

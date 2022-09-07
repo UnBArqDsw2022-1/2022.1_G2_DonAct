@@ -5,9 +5,13 @@ const Ong = require('./models/ONGModel')
 const Item = require('./models/ItemModel')
 const AcaoSocial = require('./models/AcaoSocialModel')
 
-Item.drop()
-AcaoSocial.drop()
-Ong.drop()
+Ong.hasMany(AcaoSocial, {
+  foreignKey: {
+    allowNull: false
+  }
+})
+
+AcaoSocial.belongsTo(Ong)
 
 AcaoSocial.hasMany(Item, {
   foreignKey: {
@@ -16,14 +20,10 @@ AcaoSocial.hasMany(Item, {
 })
 
 Item.belongsTo(AcaoSocial)
-
-Ong.hasMany(AcaoSocial, {
-  foreignKey: {
-    allowNull: false
-  }
-})
-
-AcaoSocial.belongsTo(Ong)
+  
+Ong.sync()
+AcaoSocial.sync()
+Item.sync()
 
 const ONGRouter = require('./routes/ONGRouter')
 const ItemRouter = require('./routes/ItemRouter')

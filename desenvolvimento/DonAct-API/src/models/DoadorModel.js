@@ -48,13 +48,17 @@ const Doador = db.define('doador', {
         allowNull: false
     },
     cpf: {
-        type: Sequelize.STRING,
+        type: DataTypes.BIGINT(11),
         allowNull: false,
         primaryKey: {
             msg: "O CPF inserido já foi cadastrado."
         },
         unique: {
             msg: "O CPF inserido já foi cadastrado."
+        },
+        validate: {
+            len: [11,11],
+            is: /([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/,
         }
     },
     dataNascimento: {

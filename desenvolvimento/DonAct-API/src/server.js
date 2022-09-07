@@ -7,9 +7,9 @@ require('dotenv').config()
 
 app.use(express.json())
 
-app.use("/ong", ONGRouter)
 app.use("/item", ItemRouter)
 app.use("/acaosocial", AcaoSocial)
+app.use("/ong", ONGRouter)
 
 const port = process.env.PORT || 8080
 

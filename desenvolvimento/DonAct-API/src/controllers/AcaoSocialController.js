@@ -10,5 +10,14 @@ module.exports = {
             res.status(400).send({ error: err.message })
         }
 
+    },
+
+    mostrar: async (req, res) => {
+        try {
+            const acoes = await AcaoSocial.findAll();
+            res.status(200).send(acoes);
+        } catch (err) {
+            res.status(400).send({ error: err.message })
+        }
     }
 }

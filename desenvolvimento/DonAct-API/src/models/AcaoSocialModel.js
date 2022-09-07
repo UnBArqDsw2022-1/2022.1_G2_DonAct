@@ -1,9 +1,8 @@
 const Sequelize = require('sequelize')
 const db = require('../config/db')
-const Item = require('../models/ItemModel.js');
-const Ong = require('../models/ONGModel')
+const Ong = require('./ONGModel')
 
-const AcaoSocial = db.define('doacao', {
+const AcaoSocial = db.define('acaosocial', {
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
@@ -27,28 +26,19 @@ const AcaoSocial = db.define('doacao', {
         type: Sequelize.DATE,
         allowNull: false
 
-    },
-    // itens: {
-    //     type: Sequelize.STRING,
-    //     allowNull: false,
-    //     get() {
-    //         return this.getDataValue('itens').split(';')
-    //     },
-    //     set(val) {
-    //         this.setDataValue('itens', val.join(';'));
-    //     },
-    // },
-    // ong: {
-    //     type: 
-    // }
-
+    }
 })
 
-AcaoSocial.hasMany(Item)
-Item.belongsTo(AcaoSocial)
+// AcaoSocial.drop()
+// Ong.drop()
 
-AcaoSocial.belongsTo(Ong)
-Ong.hasMany(AcaoSocial)
+// Ong.hasMany(AcaoSocial, {
+//     foreignKey: {
+//         allowNull: false
+//     }
+// })
+
+// AcaoSocial.belongsTo(Ong)
 
 AcaoSocial.sync()
 

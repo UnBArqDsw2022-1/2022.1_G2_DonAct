@@ -1,5 +1,6 @@
 const DataTypes = require('sequelize')
 const db = require('../config/db')
+const AcaoSocial = require('./AcaoSocialModel')
 
 const Ong = db.define('ongs', {
     cnpj: {
@@ -7,7 +8,7 @@ const Ong = db.define('ongs', {
         primaryKey: true,
         allowNull: false,
         validate: {
-            len: [14,14],
+            len: [14, 14],
             is: /([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/,
         }
     },
@@ -27,7 +28,7 @@ const Ong = db.define('ongs', {
         allowNull: false,
         unique: true,
         validate: {
-            len: [11,11],
+            len: [11, 11],
             is: /^[0-9]+$/,
         },
     },
@@ -39,36 +40,36 @@ const Ong = db.define('ongs', {
             isEmail: true,
             is: /\S+@\S+\.\S+/
         },
-    },    
+    },
     endereco: {
         type: DataTypes.STRING,
         allowNull: false
-    },    
+    },
     cidade: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
             is: /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
         }
-    },    
+    },
     estado: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
             is: /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
         }
-    },    
+    },
     cep: {
         type: DataTypes.BIGINT(9),
         allowNull: false,
         validate: {
             is: /^[0-9]+$/
         }
-    },    
+    },
     senha: {
         type: DataTypes.STRING,
         allowNull: false
-    },    
+    },
     nomeDoResponsavel: {
         type: DataTypes.STRING,
         allowNull: false,

@@ -127,6 +127,10 @@ module.exports = {
   },
   itens: async (req, res) => {
     const ongg = await Ong.findByPk(req.params.id, {include: Item})
-    res.send(ongg.itens)
+    if(ongg != null) {
+      res.send(ongg.itens)
+    } else {
+      res.send("ONG não encontrada!")
+    }
   }
 }

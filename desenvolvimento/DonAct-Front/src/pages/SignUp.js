@@ -36,6 +36,8 @@ import "../styles/donor.css";
 
   return (
     <>
+    <div className="outer">
+
       <div>
       <Link to="/choice">
         <a href="">
@@ -65,10 +67,10 @@ import "../styles/donor.css";
                       handleChange={formik.handleChange}
                       handleBlur={formik.handleBlur}
                       value={formik.values.nome}
-                    />
+                      />
                     {formik.touched.nome && formik.errors.nome ? (
                       <div className="error">{formik.errors.nome}</div>
-                    ) : null}
+                      ) : null}
                   </div>
                   <div className="col-md-6">
                     <Input
@@ -104,10 +106,10 @@ import "../styles/donor.css";
                       handleChange={formik.handleChange}
                       handleBlur={formik.handleBlur}
                       value={formik.values.dataN}
-                    />
+                      />
                     {formik.touched.dataN && formik.errors.dataN ? (
                       <div className="error">{formik.errors.dataN}</div>
-                    ) : null}
+                      ) : null}
                   </div>
                 </div>
                 <div className="row">
@@ -124,10 +126,10 @@ import "../styles/donor.css";
                       handleChange={formik.handleChange}
                       handleBlur={formik.handleBlur}
                       value={formik.values.telefone}
-                    />
+                      />
                     {formik.touched.telefone && formik.errors.telefone ? (
                       <div className="error">{formik.errors.telefone}</div>
-                    ) : null}
+                      ) : null}
                   </div>
                   <div className="col-md-6">
                     <Input
@@ -142,7 +144,7 @@ import "../styles/donor.css";
                       handleChange={formik.handleChange}
                       handleBlur={formik.handleBlur}
                       value={formik.values.email}
-                    />
+                      />
                     {formik.touched.email && formik.errors.email ? (
                       <div className="error">{formik.errors.email}</div>
                     ) : null}
@@ -162,10 +164,10 @@ import "../styles/donor.css";
                       handleChange={formik.handleChange}
                       handleBlur={formik.handleBlur}
                       value={formik.values.cep}
-                    />
+                      />
                     {formik.touched.cep && formik.errors.cep ? (
                       <div className="error">{formik.errors.cep}</div>
-                    ) : null}
+                      ) : null}
                   </div>
                   <div className="col-md-6">
                     <div className="row">
@@ -181,7 +183,7 @@ import "../styles/donor.css";
                           handleChange={formik.handleChange}
                           handleBlur={formik.handleBlur}
                           value={formik.values.cidade}
-                        />
+                          />
                         {formik.touched.cidade && formik.errors.cidade ? (
                           <div className="error">{formik.errors.cidade}</div>
                         ) : null}
@@ -198,10 +200,10 @@ import "../styles/donor.css";
                           handleChange={formik.handleChange}
                           handleBlur={formik.handleBlur}
                           value={formik.values.uf}
-                        />
+                          />
                         {formik.touched.uf && formik.errors.uf ? (
                           <div className="error">{formik.errors.uf}</div>
-                        ) : null}
+                          ) : null}
                       </div>
                     </div>
                   </div>
@@ -218,10 +220,10 @@ import "../styles/donor.css";
                   handleChange={formik.handleChange}
                   handleBlur={formik.handleBlur}
                   value={formik.values.endereco}
-                />
+                  />
                 {formik.touched.endereco && formik.errors.endereco ? (
                   <div className="error">{formik.errors.endereco}</div>
-                ) : null}
+                  ) : null}
                 <div className="row">
                   <div className="col-md-6">
                     <div className="column">
@@ -237,10 +239,10 @@ import "../styles/donor.css";
                         handleChange={formik.handleChange}
                         handleBlur={formik.handleBlur}
                         value={formik.values.senha}
-                      />
+                        />
                       {formik.touched.senha && formik.errors.senha ? (
                         <div className="error">{formik.errors.senha}</div>
-                      ) : null}
+                        ) : null}
                       <Input
                         required
                         classLabel="label-login"
@@ -274,6 +276,7 @@ import "../styles/donor.css";
             </div>
           </form>
         </div>
+      </div>
       </div>
     </>
   );

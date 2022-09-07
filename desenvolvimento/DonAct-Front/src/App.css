@@ -5,9 +5,19 @@
 }
 .App {
   text-align: center;
+  overflow-x: hidden;
+  background-color: #FFF;
+  background-size:cover;
+  background-repeat: repeat;
 }
 .App-background{
   background-color: #D8CBC7;
+  background-size:cover;
+  background-repeat: repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 .App-logo {
   height: 40vmin;

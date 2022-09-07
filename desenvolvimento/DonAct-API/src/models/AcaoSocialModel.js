@@ -40,6 +40,6 @@ const AcaoSocial = db.define('acaosocial', {
 
 // AcaoSocial.belongsTo(Ong)
 
-AcaoSocial.sync()
+// AcaoSocial.sync()
 
 module.exports = AcaoSocial

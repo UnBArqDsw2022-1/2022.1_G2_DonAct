@@ -30,17 +30,6 @@ const Item = db.define('itens', {
 
 })
 
-Item.drop()
-AcaoSocial.drop()
-
-AcaoSocial.hasMany(Item, {
-    foreignKey: {
-        allowNull: false
-    }
-});
-
-Item.belongsTo(AcaoSocial);
-
-Item.sync()
+// Item.sync()
 
 module.exports = Item

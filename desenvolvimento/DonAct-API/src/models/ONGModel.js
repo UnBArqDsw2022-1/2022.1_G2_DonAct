@@ -88,6 +88,6 @@ const Ong = db.define('ongs', {
     }
 })
 
-Ong.sync()
+// Ong.sync()
 
 module.exports = Ong

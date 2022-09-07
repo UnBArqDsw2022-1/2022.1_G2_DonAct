@@ -7,5 +7,6 @@ router.post("/cadastrar", ONGController.cadastrar)
 router.get("/:id/editar", ONGController.editar)
 router.get("/mostrar", ONGController.mostrar)
 router.delete("/:id/excluir", ONGController.deletar)
+router.get("/:id/itens", ONGController.itens)
 
 module.exports = router

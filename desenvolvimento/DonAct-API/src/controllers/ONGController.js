@@ -1,6 +1,6 @@
 const axios = require('axios').default;
 const Ong = require("../models/ONGModel")
-
+const Item = require("../models/ItemModel")
 
 module.exports = {
   inicial: async (req, res) => {
@@ -124,5 +124,9 @@ module.exports = {
     .catch(function(err) {
       res.send(err)
     })
+  },
+  itens: async (req, res) => {
+    const ongg = await Ong.findByPk(req.params.id, {include: Item})
+    res.send(ongg.itens)
   }
 }

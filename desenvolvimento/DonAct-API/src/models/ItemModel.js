@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../config/db')
+const Ong = require("./ONGModel")
+
 
 const Item = db.define('itens',{
     id: {
@@ -23,11 +25,17 @@ const Item = db.define('itens',{
     foto: {
         type: Sequelize.BLOB,
         allowNull: false
-
-    }
-
+    },
 })
 
-Item.sync()
+Ong.hasMany(Item, {
+    foreignKey: {
+        allowNull: false
+    }
+});
+
+Item.belongsTo(Ong);
+
+Item.sync();
 
 module.exports = Item

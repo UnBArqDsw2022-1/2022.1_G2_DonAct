@@ -5,6 +5,7 @@ import Home from "../src/pages/Home";
 import Login from "../src/pages/Login";
 import Choice from "../src/pages/Choice";
 import Ong from "../src/pages/CadastroOng";
+import DashDonor from "./pages/DashDonor";
 import "./App.css";
 import SignUp from "./pages/SignUp";
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/choice" element={<Choice />} />
             <Route path="/donor" element={<SignUp />} />
+            <Route path="/donor/dash" element={<DashDonor />}/>
             <Route path="/ong" element={<Ong />}/>
           </Routes>
       </div>

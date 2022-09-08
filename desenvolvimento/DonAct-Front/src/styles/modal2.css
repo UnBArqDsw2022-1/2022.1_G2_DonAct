@@ -1,0 +1,93 @@
+#Home-announce-container {
+	height: 100%;
+	width: 100%;
+	background-color:#502223;
+	display: flex;
+	flex-direction: row;
+}
+
+.Book-announce-container input{
+	color: #502223;
+	font-weight:bold;
+	font-size: larger;
+}
+
+.Book-announce-container textarea{
+	color: #502223;
+	font-weight:bold;
+	font-size: larger;
+}
+#Logo-home {
+	width: 45vw;
+	height: 50vh;
+	padding-left: 4%;
+	margin-top: 5em;
+}
+
+#Annouce-options {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Announce-title {
+	font-size: 2.6em;
+	font-weight: bold;
+	color: white;
+	padding-top: 15%;
+}
+#Announce-buttons-container {
+	padding-top: 15%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.Announce-buttons {
+	width: 100%;
+	height: 20%;
+	background-color: #502223;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.Announce-buttons:hover {
+	width: 100%;
+	height: 20%;
+	background-color: white;
+	color: #502223;
+	border: none;
+	cursor: pointer;
+}
+.Announce-buttons-selected {
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 100%;
+	height: 20%;
+	background-color: white;
+	color: #502223;
+	border: none;
+	cursor: pointer;
+}
+.NextButton {
+	position: absolute;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	bottom: 1em;
+	right: 1em;
+}
+.NextButton p {
+	font-size: 1.5em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.arrowNext .material-icons {
+	font-size: 2em;
+	margin-left: 0.2em;
+}

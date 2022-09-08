@@ -6,9 +6,8 @@ const Footer= (props) => {
         Contato
     <div>
         <div id = "Buttons_Footer">
-       <button> <img src={github} alt = "icon Github"></img></button> 
+       <button> <img className="img" src={github} alt = "icon Github"></img></button> 
         </div>
-
         <div id = "Contacts">
                 <div id = "Contacts_esquerda"> lorem ipsum  lorem ipsum lorem ipsum</div>
                 <div id = "Contacts_direita"> lorem ipsum  lorem ipsum lorem ipsum</div> 

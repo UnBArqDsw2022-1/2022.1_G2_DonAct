@@ -1,5 +1,5 @@
 import React from "react";
-import "./cadastroOng.css";
+import "../styles/cadastroOng.css";
 import logo from '../assets/logo_escura.png'
 
 const CadastroOng = (props) => {

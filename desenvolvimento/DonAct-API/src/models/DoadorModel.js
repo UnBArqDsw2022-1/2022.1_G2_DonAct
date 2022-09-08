@@ -48,7 +48,7 @@ const Doador = db.define('doador', {
         allowNull: false
     },
     cpf: {
-        type: DataTypes.BIGINT(11),
+        type: Sequelize.BIGINT(11),
         allowNull: false,
         primaryKey: {
             msg: "O CPF inserido já foi cadastrado."
@@ -57,7 +57,7 @@ const Doador = db.define('doador', {
             msg: "O CPF inserido já foi cadastrado."
         },
         validate: {
-            len: [11,11],
+            len: [11, 11],
             is: /([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/,
         }
     },

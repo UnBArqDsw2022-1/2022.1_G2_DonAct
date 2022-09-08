@@ -1,10 +1,12 @@
 const express = require("express")
+const cors = require('cors')
 const app = express()
 const ONGRouter = require('./routes/ONGRouter')
 const ItemRouter = require('./routes/ItemRouter')
 const DoadorRouter = require('./routes/DoadorRouter')
 require('dotenv').config()
 
+app.use(cors())
 app.use(express.json())
 
 app.use("/ong", ONGRouter)

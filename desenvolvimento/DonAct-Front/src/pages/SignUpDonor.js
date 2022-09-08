@@ -13,7 +13,7 @@ import { handlePostDoador } from "../Api";
 import "../styles/choice.css";
 import "../styles/donor.css";
     
-  const SignUp = () => {
+  const SignUpDonor = () => {
     const formik = useFormik({
       initialValues: {
         nome: "",
@@ -217,6 +217,7 @@ import "../styles/donor.css";
                   classInput="form-control"
                   id="endereco"
                   name="endereco"
+                  placeholder="Digite seu endereço"
                   handleChange={formik.handleChange}
                   handleBlur={formik.handleBlur}
                   value={formik.values.endereco}
@@ -282,4 +283,4 @@ import "../styles/donor.css";
   );
 };
 
-export default SignUp;
+export default SignUpDonor;

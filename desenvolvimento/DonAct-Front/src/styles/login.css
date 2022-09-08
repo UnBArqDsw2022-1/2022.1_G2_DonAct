@@ -1,5 +1,6 @@
 .form{
     align-content: center;
+    align-items: center;
   }
   .form-btn{
     align-items: center;
@@ -13,16 +14,7 @@
     padding-top: 20%;
     padding-bottom: 30%;
   }
-  .form-image{
-    max-width: 110px;
-    max-height: 99px;
-    display: inline-block;
-    margin-left: 75%;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    
-  }
+  
   .form-title{
     display: flex;
     align-items: center;
@@ -32,6 +24,12 @@
     align-items: center;
     padding-left: 30%;
     padding-top: 8%;
+  }
+
+  .form-image{
+    width: max-content;
+    padding-left: 2em;
+    
   }
   
 .register-text{

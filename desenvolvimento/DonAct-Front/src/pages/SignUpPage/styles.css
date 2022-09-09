@@ -1,0 +1,42 @@
+.form-begin-donor {
+  padding-top: 0%;
+  padding-bottom: 5%;
+}
+
+.form-image-donor {
+  max-width: 110px;
+  max-height: 200px;
+  display: inline-block;
+  margin-left: 40%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -12%;
+}
+
+.text {
+  font-size: 9px;
+  margin-bottom: 2%;
+}
+
+.button-signup {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.col-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.arrow {
+  padding-left: 2%;
+  padding-top: 0.5%;
+}
+
+.error {
+  font-size: 10px;
+  color: red;
+}

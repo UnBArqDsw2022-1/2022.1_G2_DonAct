@@ -1,0 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+.body-container{
+	background-color: #FFF;
+	height: 100%;
+}

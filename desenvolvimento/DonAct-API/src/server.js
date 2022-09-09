@@ -3,12 +3,12 @@ const app = express()
 const configurar = require('./config/setup')
 const rotas = require('./config/routes')
 
+require('dotenv').config()
+app.use(express.json())
+
 configurar.relacionamentos()
 configurar.sincronizarModel()
 rotas.iniciarRotas(app)
-
-require('dotenv').config()
-app.use(express.json())
 
 const port = process.env.PORT || 8080
 

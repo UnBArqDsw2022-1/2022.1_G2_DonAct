@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export async function handlePostDoador(params) {
   const body = {
     fotoDePerfil: params.fotoDePerfil,
@@ -15,10 +13,13 @@ export async function handlePostDoador(params) {
   };
 
   try {
-    const response = await axios.post(
-      "http://localhost:8080/doador/cadastrar",
-      body
-    );
+    const response = await fetch('http://localhost:8080/doador/cadastrar', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: body
+    })
 
     const data = await response.json();
 
@@ -45,10 +46,13 @@ export async function handlePostONG(params) {
   };
 
   try {
-    const response = await axios.post(
-      "http://localhost:8080/ong/cadastrar",
-      body
-    );
+    const response = await fetch('http://localhost:8080/ong/cadastrar', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: body
+    })
 
     const data = await response.json();
 

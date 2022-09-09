@@ -18,11 +18,19 @@ module.exports = {
     mostrar: async (req, res) => {
         try {
             const item = await Item.findAll();
+<<<<<<< Updated upstream
             if (!item) {
                 res.status(400).send({ error: "Sem itens!" });
             }
             else
                 res.status(200).send({ item });
+=======
+            if (item.length > 0) {
+                res.status(200).send({ item });
+            }
+            else
+                res.status(400).send({ error: "Sem itens!" });
+>>>>>>> Stashed changes
         } catch (err) {
             res.status(400).send({ error: err.message });
 
@@ -34,11 +42,19 @@ module.exports = {
 
         try {
             const item = await Item.findByPk(req.params.id)
+<<<<<<< Updated upstream
             if (!item) {
                 res.status(400).send({ erro: 'Item não existente' })
             }
             else
                 res.status(200).send({ item });
+=======
+            if (item.length > 0) {
+                res.status(200).send({ item });
+            }
+            else
+                res.status(400).send({ erro: 'Item não existente' })
+>>>>>>> Stashed changes
 
         } catch (err) {
             res.status(400).send({ error: err.message });
@@ -49,10 +65,14 @@ module.exports = {
 
         try {
             const item = await Item.findByPk(req.params.id)
+<<<<<<< Updated upstream
             if (!item) {
                 res.status(404).send({ error: 'Item não encontrado' })
             }
             else {
+=======
+            if (item.length > 0) {
+>>>>>>> Stashed changes
                 await Item.update(
                     {
                         "quantidade": req.body.quantidade,
@@ -64,7 +84,14 @@ module.exports = {
                         where: { "id": req.params.id },
                         truncate: false,
                     });
+<<<<<<< Updated upstream
                 res.status(200).send("Item editado com sucesso!");
+=======
+                    res.status(200).send("Item editado com sucesso!");
+                }
+            else {
+                res.status(404).send({ error: 'Item não encontrado' })
+>>>>>>> Stashed changes
             }
 
 
@@ -78,15 +105,25 @@ module.exports = {
 
         try {
             const item = await Item.findByPk(req.params.id)
+<<<<<<< Updated upstream
             if (!item) {
                 res.status(404).send({ error: 'Item não encontrado' })
             }
             else {
+=======
+            if (item.length > 0) {
+>>>>>>> Stashed changes
                 await Item.destroy({
                     where: { "id": req.params.id },
                     truncate: false,
                 }, res.send("Deletado com sucesso"))
             }
+<<<<<<< Updated upstream
+=======
+            else {
+                res.status(404).send({ error: 'Item não encontrado' })
+            }
+>>>>>>> Stashed changes
 
         } catch (err) {
 

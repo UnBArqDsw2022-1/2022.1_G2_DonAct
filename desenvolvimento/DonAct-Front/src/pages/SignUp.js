@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
+import { handlePostDoador } from "../Api";
 
 import Logo from "../assets/logo.svg";
 import Arrow from "../assets/arrow.svg";
@@ -29,17 +30,10 @@ const SignUp = () => {
     },
     validationSchema: validateSchema(),
     onSubmit: (values) => {
-      console.log(JSON.stringify(values, null, 2));
+      handlePostDoador(values);
     },
   });
 
-  const onSub = async (data) => {
-    const response = await axios.post(
-      "http://localhost:8080/doador/cadastrar",
-      body
-    );
-    console.log(response);
-  };
   return (
     <>
       <div className="outer">

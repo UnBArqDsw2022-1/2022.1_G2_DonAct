@@ -35,3 +35,13 @@
     border-color: #D8CBC7;
     background-color: #502223;
 }
+ span {
+	font-size: 3.5em;
+	cursor: pointer;
+	margin-left: 5%;
+    color:#D8CBC7 ;
+}
+
+label{
+    color:#D8CBC7 ;
+}

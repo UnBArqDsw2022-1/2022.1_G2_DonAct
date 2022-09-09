@@ -6,6 +6,7 @@ import Login from "../src/pages/Login";
 import Choice from "../src/pages/Choice";
 import "./App.css";
 import SignUp from "./pages/SignUp";
+import Dash from "./pages/Dash"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/choice" element={<Choice />} />
             <Route path="/donor" element={<SignUp />} />
+            <Route path="/listagem" element={<Dash/>} />
           </Routes>
       </div>
     </BrowserRouter>

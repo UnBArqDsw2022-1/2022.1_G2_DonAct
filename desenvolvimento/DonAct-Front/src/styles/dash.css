@@ -1,0 +1,102 @@
+#searchContainer {
+	overflow-x: hidden;
+	display: block;
+    background-color: #D8CBC7;
+   
+}
+
+#grade-header {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	padding-top: 3em;
+    
+}
+#grade-title {
+	padding-top: 4vh;
+	padding-left: 1.5em;
+	padding-bottom: 1.5em;
+	color: #502223;
+	font-size: 1em;
+}
+#searchButtons {
+	padding-right: 2em;
+}
+
+.filter {
+	width: 5em;
+	height: 2.2em;
+	font-size: 1em;
+	background-color: #f8f5ff;
+	border: none;
+	border-radius: 0.7em;
+	font-weight: bold;
+	color: #502223;
+	margin-left: 0.5em;
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+}
+
+.filter:hover {
+	cursor: pointer;
+	box-shadow: inset 4px 0px 4px rgba(0, 0, 0, 0.25);
+	filter: none;
+}
+
+/*-------------------------------------*/
+
+#searchBox {
+	height: 70vh;
+	width: 12em;
+	border-radius: 1em;
+	background: rgba(248, 245, 255, 1);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin-left: 2em;
+	float: left;
+}
+
+
+
+/*----------------------------*/
+
+.gradeContainer {
+	width: 120vw;
+	display: block;
+	font-size: 1em;
+}
+
+.itens-container {
+	margin-right: 5em;
+	align-items: center;
+	text-align: justify;
+	width: 40vw;
+	margin: 2em;
+	background: #f8f5ff;
+	border-radius: 1em;
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+    float: left;
+}
+
+.itens-title {
+	padding: 2em;
+	cursor: pointer;
+    width: 100vw;
+}
+
+
+
+.itens-title label {
+	color: #502223;
+	vertical-align:bottom;
+	font-weight: bold;
+	text-align:center;
+    background-color: #f8f5ff;
+    
+}
+
+/*------------------------------------*/
+
+
+
+
+/*------------------------------------*/

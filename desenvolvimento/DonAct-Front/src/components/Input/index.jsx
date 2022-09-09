@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/login.css";
+
+import "./styles.css";
 
 const Input = ({
   classLabel,

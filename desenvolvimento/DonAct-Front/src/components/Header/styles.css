@@ -1,0 +1,47 @@
+.header {
+	display: block;
+	width: 100vw;
+	margin: 0px;
+	font-family: Roboto;
+	padding: 0px;
+}
+
+.header_content {
+	height: 12em;
+	width: 100vw;
+	vertical-align: middle;
+	color: black;
+	margin-top: 2.5vh;
+	margin-bottom: 5vh;
+    border-bottom-style: solid;
+    border-width: 0.1em;
+}
+
+.header_logo {
+	margin-top: 2em;
+	margin-left: 2em;
+	height: 7.2em;
+}
+
+.header_icons {
+    position: absolute;
+	right: 0em;
+	top: 2.7em;
+	width: 7em;
+    height: 2em;
+	font-size: 2em;
+
+}
+
+.header_icons span {
+	font-size: 1.5em;
+	margin-left: 5%;
+	vertical-align: top;
+}
+
+.header_icons label {
+	line-height: 1.8em;
+	vertical-align: top;
+}
+
+

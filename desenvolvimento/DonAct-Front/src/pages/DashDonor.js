@@ -51,7 +51,7 @@ const DashDonor = (props) => {
     return (
         <div id="body-container">
             <Navbar/>
-            <div className="lateral">
+            <div className="lateral-direita">
                 <div className="infobox">
                     <div className="searchbar">
                         <Search text={"Procurar Doação"}/>
@@ -77,6 +77,21 @@ const DashDonor = (props) => {
                                 {ongbox}
                         </div>
                     </div>
+            </div>
+            <div className="lateral-esquerda">
+                <div className="infobox">
+                    <div className="searchbar">
+                        <Search text={"Procurar Doação"}/>
+                    </div>
+          
+                    <span className="text">
+                        Minhas Doações
+                    </span>
+
+                    <div className="bar-divider"></div>
+
+                </div>
+
             </div>
 	    </div>
     );

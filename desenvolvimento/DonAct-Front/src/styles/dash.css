@@ -66,3 +66,29 @@
     border-color: #653C3D;
     float:inline-start;
 }
+.ong-box{
+    border-color: #E3DBD8;
+    background-color: #E3DBD8;
+    box-shadow: #4d4446;
+    margin-top: 1.5em;
+    padding: 2em;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+   
+    max-width: 60vw;
+}
+.bar-divider-box{
+    height: 2px;
+    width: 50vw;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #653C3D;
+    float:inline-start;
+}
+.ong-title{
+    font-weight: bold;
+    color: #653C3D;
+    font-size: 1.5em !important;
+    white-space: nowrap;
+}

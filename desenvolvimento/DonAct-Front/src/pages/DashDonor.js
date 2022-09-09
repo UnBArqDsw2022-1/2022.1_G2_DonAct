@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "../components/Search";
 import Navbar from "../components/Navbar";
+import Button from "../components/Button";
 import "../styles/dash.css";
 
 
@@ -45,7 +46,9 @@ const DashDonor = (props) => {
                     Precisamos de:
                     <List itens={element.need} />
                 </div>
-                
+                <div>
+                    <Button text={"Doar"}></Button>
+                </div>
             </div>
         </div>
     );

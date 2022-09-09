@@ -5,19 +5,9 @@
 }
 .App {
   text-align: center;
-  overflow-x: hidden;
-  background-color: #FFF;
-  background-size:cover;
-  background-repeat: repeat;
 }
-.App-background{
-  background-color: #D8CBC7;
-  background-size:cover;
-  background-repeat: repeat;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+.App-background {
+  background-color: #d8cbc7;
 }
 .App-logo {
   height: 40vmin;
@@ -26,7 +16,6 @@
 .App-link {
   color: #24572c;
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -47,7 +36,7 @@
 }
 
 .outer .form-control:focus {
-  border-color: #D8CBC7;
+  border-color: #d8cbc7;
   box-shadow: none;
 }
 .App-link {
@@ -63,16 +52,13 @@
   }
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #502223;
-  color: #FFF;
+  color: #fff;
   border-color: #502223;
-
 }
-  .btn-primary:hover{
-  background-color: #9D7B7B;
-  color: #FFF;
+.btn-primary:hover {
+  background-color: #9d7b7b;
+  color: #fff;
   border-color: #502223;
-
-  }
-
+}

@@ -7,34 +7,39 @@ import Logo from "../assets/logo.svg";
 import Arrow from "../assets/arrow.svg";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import validateSchema from "../hooks/validateSchemaONG";
-import { handlePostONG } from "../Api";
+import validateSchema from "../hooks/validateSchema";
 
 import "../styles/choice.css";
 import "../styles/donor.css";
 
-const SignUpONG = () => {
+const SignUp = () => {
   const formik = useFormik({
     initialValues: {
-      nomeDoResponsavel: "",
       nome: "",
-      cnpj: "",
+      cpf: "",
+      dataN: "",
       telefone: "",
       email: "",
-      emailDoResponsavel: "",
       cep: "",
       cidade: "",
-      estado: "",
+      uf: "",
       endereco: "",
       senha: "",
       senha2: "",
     },
     validationSchema: validateSchema(),
     onSubmit: (values) => {
-      handlePostONG(values);
+      console.log(JSON.stringify(values, null, 2));
     },
   });
 
+  const onSub = async (data) => {
+    const response = await axios.post(
+      "http://localhost:8080/doador/cadastrar",
+      body
+    );
+    console.log(response);
+  };
   return (
     <>
       <div className="outer">
@@ -62,12 +67,12 @@ const SignUpONG = () => {
                       <Input
                         required
                         classLabel="label-login"
-                        text="Nome da ONG"
+                        text="Nome completo"
                         type="text"
                         classInput="form-control"
                         id="nome"
                         name="nome"
-                        placeholder="Digite o nome da ONG"
+                        placeholder="Digite seu nome completo"
                         handleChange={formik.handleChange}
                         handleBlur={formik.handleBlur}
                         value={formik.values.nome}
@@ -80,22 +85,42 @@ const SignUpONG = () => {
                       <Input
                         required
                         classLabel="label-login"
-                        text="CNPJ"
+                        text="CPF"
                         type="text"
                         classInput="form-control"
-                        id="cnpj"
-                        name="cnpj"
-                        placeholder="Somente dígitos"
+                        id="cpf"
+                        name="cpf"
+                        placeholder="Somente números"
                         handleChange={formik.handleChange}
                         handleBlur={formik.handleBlur}
-                        value={formik.values.cnpj}
+                        value={formik.values.cpf}
                       />
-                      {formik.touched.cnpj && formik.errors.cnpj ? (
-                        <div className="error">{formik.errors.cnpj}</div>
+                      {formik.touched.cpf && formik.errors.cpf ? (
+                        <div className="error">{formik.errors.cpf}</div>
                       ) : null}
                     </div>
                   </div>
 
+                  <div className="row">
+                    <div className="col-md-6">
+                      <Input
+                        required
+                        classLabel="label-login"
+                        text="Data de nascimento"
+                        type="text"
+                        classInput="form-control"
+                        id="dataN"
+                        name="dataN"
+                        placeholder="XX/XX/XXXX"
+                        handleChange={formik.handleChange}
+                        handleBlur={formik.handleBlur}
+                        value={formik.values.dataN}
+                      />
+                      {formik.touched.dataN && formik.errors.dataN ? (
+                        <div className="error">{formik.errors.dataN}</div>
+                      ) : null}
+                    </div>
+                  </div>
                   <div className="row">
                     <div className="col-md-6">
                       <Input
@@ -115,61 +140,16 @@ const SignUpONG = () => {
                         <div className="error">{formik.errors.telefone}</div>
                       ) : null}
                     </div>
-
-                    <div className="row">
-                      <div className="col-md-6">
-                        <Input
-                          required
-                          classLabel="label-login"
-                          text="E-mail Responsável"
-                          type="text"
-                          classInput="form-control"
-                          id="emailDoResponsavel"
-                          name="emailDoResponsavel"
-                          placeholder="Digite o e-mail do responsável"
-                          handleChange={formik.handleChange}
-                          handleBlur={formik.handleBlur}
-                          value={formik.values.emailDoResponsavel}
-                        />
-                        {formik.touched.emailDoResponsavel &&
-                        formik.errors.emailDoResponsavel ? (
-                          <div className="error">
-                            {formik.errors.emailDoResponsavel}
-                          </div>
-                        ) : null}
-                      </div>
-                      <div className="col-md-6">
-                        <Input
-                          required
-                          classLabel="label-login"
-                          text="Nome do Responsável"
-                          type="text"
-                          classInput="form-control"
-                          id="nomeDoResponsavel"
-                          name="nomeDoResponsavel"
-                          placeholder="Digite o nome do responsável"
-                          handleChange={formik.handleChange}
-                          handleBlur={formik.handleBlur}
-                          value={formik.values.nomeDoResponsavel}
-                        />
-                        {formik.touched.nomeDoResponsavel &&
-                        formik.errors.nomeDoResponsavel ? (
-                          <div className="error">
-                            {formik.errors.nomeDoResponsavel}
-                          </div>
-                        ) : null}
-                      </div>
-                    </div>
                     <div className="col-md-6">
                       <Input
                         required
                         classLabel="label-login"
-                        text="E-mail da Instituição"
+                        text="Email"
                         type="text"
                         classInput="form-control"
                         id="email"
                         name="email"
-                        placeholder="Digite o e-mail da instituição"
+                        placeholder="Digite seu email"
                         handleChange={formik.handleChange}
                         handleBlur={formik.handleBlur}
                         value={formik.values.email}
@@ -184,57 +164,35 @@ const SignUpONG = () => {
                       <Input
                         required
                         classLabel="label-login"
-                        text="CEP"
+                        text="Cidade"
                         type="text"
                         classInput="form-control"
-                        id="cep"
-                        name="cep"
-                        placeholder="Somente números"
+                        id="cidade"
+                        name="cidade"
                         handleChange={formik.handleChange}
                         handleBlur={formik.handleBlur}
-                        value={formik.values.cep}
+                        value={formik.values.cidade}
                       />
-                      {formik.touched.cep && formik.errors.cep ? (
-                        <div className="error">{formik.errors.cep}</div>
+                      {formik.touched.cidade && formik.errors.cidade ? (
+                        <div className="error">{formik.errors.cidade}</div>
                       ) : null}
                     </div>
                     <div className="col-md-6">
-                      <div className="row">
-                        <div className="col-md-6">
-                          <Input
-                            required
-                            classLabel="label-login"
-                            text="Cidade"
-                            type="text"
-                            classInput="form-control"
-                            id="cidade"
-                            name="cidade"
-                            handleChange={formik.handleChange}
-                            handleBlur={formik.handleBlur}
-                            value={formik.values.cidade}
-                          />
-                          {formik.touched.cidade && formik.errors.cidade ? (
-                            <div className="error">{formik.errors.cidade}</div>
-                          ) : null}
-                        </div>
-                        <div className="col-md-6">
-                          <Input
-                            required
-                            classLabel="label-login"
-                            text="Estado"
-                            type="text"
-                            classInput="form-control"
-                            id="estado"
-                            name="estado"
-                            handleChange={formik.handleChange}
-                            handleBlur={formik.handleBlur}
-                            value={formik.values.estado}
-                          />
-                          {formik.touched.estado && formik.errors.estado ? (
-                            <div className="error">{formik.errors.estado}</div>
-                          ) : null}
-                        </div>
-                      </div>
+                      <Input
+                        required
+                        classLabel="label-login"
+                        text="Estado"
+                        type="text"
+                        classInput="form-control"
+                        id="uf"
+                        name="uf"
+                        handleChange={formik.handleChange}
+                        handleBlur={formik.handleBlur}
+                        value={formik.values.uf}
+                      />
+                      {formik.touched.uf && formik.errors.uf ? (
+                        <div className="error">{formik.errors.uf}</div>
+                      ) : null}
                     </div>
                   </div>
 
@@ -246,7 +204,6 @@ const SignUpONG = () => {
                     classInput="form-control"
                     id="endereco"
                     name="endereco"
-                    placeholder="Digite o endereço da instituição"
                     handleChange={formik.handleChange}
                     handleBlur={formik.handleBlur}
                     value={formik.values.endereco}
@@ -297,7 +254,10 @@ const SignUpONG = () => {
                           Ao se cadastrar você concorda com o Termo de Uso e a
                           Política de Privacidade do Donact
                         </p>
-                        <Button text="Cadastrar" />
+                        <Button
+                          text="Cadastrar"
+                          onClick={() => onSub(formik.values)}
+                        />
                       </div>
                     </div>
                     <div className="label-login">* Campos obrigatórios</div>
@@ -312,4 +272,4 @@ const SignUpONG = () => {
   );
 };
 
-export default SignUpONG;
+export default SignUp;

@@ -80,9 +80,6 @@ const DashDonor = (props) => {
             </div>
             <div className="lateral-esquerda">
                 <div className="infobox">
-                    <div className="searchbar">
-                        <Search text={"Procurar Doação"}/>
-                    </div>
           
                     <span className="text">
                         Minhas Doações

@@ -1,4 +1,4 @@
-.lateral-direita{
+.lateral{
     height: 100%; /* Specify a height */
     width: 27%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -26,22 +26,9 @@
     top: 0;
     right: 0;
     z-index: 1;
+    overflow: auto;
 }
-.lateral-esquerda{
-    height: 100%; /* Specify a height */
-    width: 27%; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #D8CBC7; /* 653C3D*/
-    border-right: #4d4446;
-    border-style: solid;
-    border-width: 0.2em;
-    display: flex;
 
-}
 .infobox{
     position: relative;
     top: 5em;
@@ -72,6 +59,7 @@
     top: 5em;
     margin-top: 2em;
     display: inline-block;
+  
 }
 .bar-divider-body{
     height: 2px;
@@ -86,16 +74,16 @@
     background-color: #E3DBD8;
     box-shadow: #4d4446;
     margin-top: 1.5em;
-    padding: 2em;
+    padding: 1em;
     border-style: solid;
     border-width: 3px;
     border-radius: 7px;
-   
+    display: flex;
     max-width: 60vw;
 }
 .bar-divider-box{
     height: 2px;
-    width: 50vw;
+    width: 42vw;
     border-radius: 12px;
     border-style: solid;
     border-color: #653C3D;
@@ -106,4 +94,22 @@
     color: #653C3D;
     font-size: 1.5em !important;
     white-space: nowrap;
+}
+.OngElements{
+    margin-bottom: 3em;
+}
+.box-image{
+    border-radius: 50%;
+    height: 5.5em;
+    width: 5.5em;
+}
+.contents{
+    text-align:justify;
+}
+.itensList{
+    font-weight:normal;
+    font-size: .9em;
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #653C3D;
 }

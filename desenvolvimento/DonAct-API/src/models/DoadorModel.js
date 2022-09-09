@@ -3,7 +3,7 @@ const db = require('../config/db')
 const Doador = db.define('doador', {
     fotoDePerfil: {
         type: Sequelize.BLOB,
-        allowNull: false
+        allowNull: true
     },
     nome: {
         type: Sequelize.STRING,

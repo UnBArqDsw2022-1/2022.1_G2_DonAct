@@ -5,6 +5,7 @@ const configurar = require('./config/setup')
 const rotas = require('./config/routes')
 
 require('dotenv').config()
+app.use(cors());
 app.use(express.json())
 
 configurar.relacionamentos()

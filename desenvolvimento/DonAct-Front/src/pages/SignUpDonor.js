@@ -29,6 +29,7 @@ const SignUpDonor = () => {
     },
     validationSchema: validateSchema(),
     onSubmit: (values) => {
+      // console.log(JSON.stringify(values, null, 2));
       handlePostDoador(values);
     },
   });
@@ -110,7 +111,7 @@ const SignUpDonor = () => {
                         value={formik.values.dataNascimento}
                       />
                       {formik.touched.dataNascimento &&
-                      formik.errors.dataNascimento ? (
+                        formik.errors.dataNascimento ? (
                         <div className="error">
                           {formik.errors.dataNascimento}
                         </div>

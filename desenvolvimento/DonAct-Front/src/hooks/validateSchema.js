@@ -22,9 +22,11 @@ const validateSchema = (props) => {
     telefone: yup
       .string()
       .matches(
-        /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/,
+        /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{4}\-?[0-9]{4}$/,
         "O telefone deve possuir DDD."
       )
+      .min(11, "O telefone possuir apenas números.")
+      .max(11, "O telefone possuir apenas números.")
       .required("O campo é obrigatório."),
     email: yup
       .string()

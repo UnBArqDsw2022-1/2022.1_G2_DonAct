@@ -22,6 +22,8 @@ const validateSchema = (props) => {
         /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/,
         "O telefone deve possuir DDD."
       )
+      .min(11, "O telefone deve ter 11 dígitos.")
+      .max(11, "O telefone deve ter 11 dígitos.")
       .required("O campo é obrigatório."),
     email: yup
       .string()
@@ -35,8 +37,8 @@ const validateSchema = (props) => {
     cep: yup
       .string()
       .matches(/^[0-9]+$/, "O CEP deve conter apenas números.")
-      .min(8, "CEP incorreto.")
-      .max(8, "CEP incorreto.")
+      .min(8, "O CEP deve possuir 8 dígitos.")
+      .max(8, "O CEP deve possuir 8 dígitos.")
       .required("O campo é obrigatório."),
     estado: yup
       .string()

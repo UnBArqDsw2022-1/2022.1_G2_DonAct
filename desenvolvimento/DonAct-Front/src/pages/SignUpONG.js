@@ -31,6 +31,7 @@ const SignUpONG = () => {
     },
     validationSchema: validateSchema(),
     onSubmit: (values) => {
+      // console.log(values);
       handlePostONG(values);
     },
   });
@@ -132,7 +133,7 @@ const SignUpONG = () => {
                           value={formik.values.emailDoResponsavel}
                         />
                         {formik.touched.emailDoResponsavel &&
-                        formik.errors.emailDoResponsavel ? (
+                          formik.errors.emailDoResponsavel ? (
                           <div className="error">
                             {formik.errors.emailDoResponsavel}
                           </div>
@@ -153,7 +154,7 @@ const SignUpONG = () => {
                           value={formik.values.nomeDoResponsavel}
                         />
                         {formik.touched.nomeDoResponsavel &&
-                        formik.errors.nomeDoResponsavel ? (
+                          formik.errors.nomeDoResponsavel ? (
                           <div className="error">
                             {formik.errors.nomeDoResponsavel}
                           </div>

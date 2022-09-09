@@ -1,31 +1,29 @@
 export async function handlePostDoador(params) {
-  const body = {
-    fotoDePerfil: params.fotoDePerfil,
-    nome: params.nome,
-    telefone: params.telefone,
-    email: params.email,
-    endereco: params.endereco,
-    cidade: params.cidade,
-    estado: params.estado,
-    senha: params.senha,
-    cpf: params.cpf,
-    dataNascimento: params.dataNascimento,
-  };
-
   try {
     const response = await fetch('http://localhost:8080/doador/cadastrar', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: body
+      body: JSON.stringify({
+        fotoDePerfil: null,
+        nome: params.nome,
+        telefone: params.telefone,
+        email: params.email,
+        endereco: params.endereco,
+        cidade: params.cidade,
+        estado: params.estado,
+        senha: params.senha,
+        cpf: params.cpf,
+        dataNascimento: params.dataNascimento
+      }, null, 2)
     })
 
     const data = await response.json();
 
-    return data;
+    return data
   } catch (error) {
-    throw error;
+    throw error
   }
 }
 
@@ -51,7 +49,7 @@ export async function handlePostONG(params) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: body
+      body: JSON.stringify(body)
     })
 
     const data = await response.json();

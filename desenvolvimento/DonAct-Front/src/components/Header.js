@@ -1,4 +1,5 @@
 import "../styles/header.css"
+import {Link } from "react-router-dom";
 import donation from "../assets/headrimg.jpg"
 import heart from "../assets/heart.png"
 import bubbles from "../assets/bubbles.png"
@@ -7,11 +8,11 @@ const Header = (props) => {
   return (
     <div className = "header">
       <div className=" headerImg">
-        <img className=" donationimg" src={donation} />
+        <img className=" donationimg" src={donation}  alt = "" />
       </div>
 
           <div className="prospection text-start">
-              <img className="heartimg" src={heart}/>
+              <img className="heartimg" src={heart}  alt = "" />
                 <p className="text-home">
                   <span>
                     Encontre uma ONG!
@@ -22,9 +23,11 @@ const Header = (props) => {
                   </span>
                 </p>
             <div className="btn-singup">
-              <Button text="Cadastre-se"></Button>
+              <Link to="/choice">
+                <Button text="Cadastre-se"></Button>
+              </Link>
             </div>
-              <img className="bubblesimg" src={bubbles}/>
+              <img className="bubblesimg" src={bubbles}  alt = "" />
           </div>
     </div>
   );

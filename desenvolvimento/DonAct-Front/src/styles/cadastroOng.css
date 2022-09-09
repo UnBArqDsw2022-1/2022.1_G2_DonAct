@@ -14,9 +14,9 @@
   margin-top: -12%;
 }
 
-.text-singin{
-  font-size: 9px !important;
-  margin-bottom: 2% !important; 
+.text {
+  font-size: 9px;
+  margin-bottom: 2%;
 }
 
 .button-signup {
@@ -38,10 +38,4 @@
 
 .error {
   font-size: 10px;
-}
-.outer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
 }

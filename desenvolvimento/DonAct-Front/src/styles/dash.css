@@ -1,0 +1,123 @@
+.lateral{
+    height: 100%; /* Specify a height */
+    width: 27%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #D8CBC7; /* 653C3D*/
+    border-right: #4d4446;
+    border-style: solid;
+    border-width: 0.2em;
+    display: flex;
+
+}
+
+.searchbar{
+    width: 100%;
+    display: flex;
+}
+.dashBody{
+    height: 100%; /* Specify a height */
+    width: 73%; 
+    background-color: #D8CBC7; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: auto;
+}
+
+.infobox{
+    position: relative;
+    top: 5em;
+    margin-top: 2em;
+    margin-left: 2em;
+    display: inline-block;
+}
+.text{
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    font-weight: bold;
+    color: #653C3D;
+    font-size: 1.5em !important;
+    float: left;
+    padding: 1em;
+    white-space: nowrap;
+}
+.bar-divider{
+    height: 2px;
+    width: 22vw;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #653C3D;
+    float: left;
+}
+.bodybox{
+    position: relative;
+    top: 5em;
+    margin-top: 2em;
+    display: inline-block;
+  
+}
+.bar-divider-body{
+    height: 2px;
+    width: 65vw;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #653C3D;
+    float:inline-start;
+}
+.ong-box{
+    border-color: #E3DBD8;
+    background-color: #E3DBD8;
+    box-shadow: #4d4446;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    display: flex;
+    max-width: 60vw;
+}
+.bar-divider-box{
+    height: 2px;
+    width: 42vw;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #653C3D;
+    float:inline-start;
+}
+.ong-title{
+    font-weight: bold;
+    color: #653C3D;
+    font-size: 1.5em !important;
+    white-space: nowrap;
+}
+.OngElements{
+    margin-bottom: 3em;
+}
+.box-image{
+    border-radius: 50%;
+    height: 5.5em;
+    width: 5.5em;
+}
+.contents{
+    text-align:justify;
+}
+.itensList{
+    font-weight:normal;
+    font-size: .9em;
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #653C3D;
+}
+.btn-donation{
+    float: right;
+}
+
+.itensList :hover{
+    background-color:  #E3DBD8;
+    color: #653C3D;
+}

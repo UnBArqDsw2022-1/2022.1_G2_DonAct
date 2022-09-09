@@ -20,12 +20,14 @@ const Choice = () => (
           <br />
           <div className="btn-duo">
             <div className="btn-tag ">
+            <Link to="/ong">
               <button
                 type="submit"
                 className="btn btn-dark btn-lg btn-block btn-primary btn-choice"
               >
                 Cadastrar ONG
               </button>
+              </Link>
             </div>
             <div className="btn-tag">
               <div class="vl"></div>

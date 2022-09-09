@@ -1,19 +1,18 @@
 const express = require("express")
 const cors = require('cors')
 const app = express()
-const ONGRouter = require('./routes/ONGRouter')
-const ItemRouter = require('./routes/ItemRouter')
-const DoadorRouter = require('./routes/DoadorRouter')
-require('dotenv').config()
+const configurar = require('./config/setup')
+const rotas = require('./config/routes')
 
-app.use(cors())
+require('dotenv').config()
+app.use(cors());
 app.use(express.json())
 
-app.use("/ong", ONGRouter)
-app.use("/item", ItemRouter)
-app.use("/doador", DoadorRouter)
+configurar.relacionamentos()
+configurar.sincronizarModel()
+rotas.iniciarRotas(app)
 
-const port = process.env.PORT || 8080
+const port = process.env.DB_PORT || 8080
 
 app.listen(port, function () {
   console.log("server listening on port 8080")

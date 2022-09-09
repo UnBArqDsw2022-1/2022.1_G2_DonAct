@@ -1,0 +1,15 @@
+.search{
+    float: right;
+    background-color: #D8CBC7;
+    border-color: #6D5252;
+    border-radius: 7px;
+    border-width: 2px;
+    font-size: 17px;
+    color: #482728;
+}
+.search:focus{
+    float: right;
+    background-color: #D8CBC7;
+    border-color: #6D5252;
+    color: #482728;
+}

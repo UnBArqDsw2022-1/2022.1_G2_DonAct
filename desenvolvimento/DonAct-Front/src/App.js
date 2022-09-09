@@ -4,8 +4,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Home from "../src/pages/Home";
 import Login from "../src/pages/Login";
 import Choice from "../src/pages/Choice";
+import SignUpOng from "./pages/SignUpOng";
+import DashDonor from "./pages/DashDonor";
+import SignUpDonor from "./pages/SignUpDonor";
 import "./App.css";
-import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/choice" element={<Choice />} />
-            <Route path="/donor" element={<SignUp />} />
+            <Route path="/donor" element={<SignUpDonor />} />
+            <Route path="/donor/dash" element={<DashDonor />}/>
+            <Route path="/ong" element={<SignUpOng />}/>
           </Routes>
       </div>
     </BrowserRouter>

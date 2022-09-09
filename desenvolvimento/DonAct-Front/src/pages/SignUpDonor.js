@@ -263,7 +263,7 @@ import "../styles/donor.css";
                   </div>
                   <div className="col-md-6 col-button">
                     <div className="column button-signup">
-                      <p className="text">
+                      <p className="text-singin">
                         Ao se cadastrar você concorda com o Termo de Uso e a
                         Política de Privacidade do Donact
                       </p>

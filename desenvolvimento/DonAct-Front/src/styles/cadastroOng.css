@@ -1,124 +1,41 @@
-
-#CadastroOng-container{
-    width: 100%;
-    height: 200vh;
-    background-color: #D8CBC7;
-}
-#CadastroOng-container #logo{
-    width: 8vw;
-    height: 20vh;
-    padding-left: 45vw;
-    padding-top: 15vh;
-    filter:drop-shadow(1px 1px 2px #000000);
+.form-begin-donor {
+  padding-top: 0%;
+  padding-bottom: 5%;
 }
 
-#inserts-container{
-    width: 60vw;
-    height: 100vh;
-    background-color: #fff;
-    margin-left: 20vw;
-    border-radius: 2em;
-    border:#502223;
-    display:flex;
-    filter:drop-shadow(1px 1px 2px #000000)
-}
-#inserts-left{
-    padding: 6vw;
-    color:#502223;
-    font-weight: bold;
+.form-image-donor {
+  max-width: 110px;
+  max-height: 200px;
+  display: inline-block;
+  margin-left: 40%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -12%;
 }
 
-#inserts-left em{
-    color: red;
+.text {
+  font-size: 9px;
+  margin-bottom: 2%;
 }
-    
 
-#inserts-left input{
-    width:15vw;
-    padding: 12px 40px;
-    display: block;
-    margin-bottom: 2vh;
-    border-radius: 4px;
-    border:none;
-    background-color: #D8CBC7;
-   
-  }
+.button-signup {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
 
-  #city-state{
-    display: flex;
-  }
-  #city-state label #state{
-    margin-left: 0vw;
-    margin-right:50vw;
-    padding-right: 1em;
-  }
+.col-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
-  #city-state label #cep{
-    width: 6vw;
-    margin-left: 22vw;
-    padding-right: 1em;
-  }
- 
-  
-  #inserts-left #adress{
-    width:43vw;
-  }
-  #inserts-left #city{
-    width:5vw;
-  }
-  #inserts-left #state{
-    width:5vw;
-    margin-left: 1em;
-  }
-  #Ong-CNPJ{
-    display: flex;
-  }
-  #Ong-CNPJ #cnpj{
-    width:4vw;
-    margin-left:5em;
-  }
-  
-  #Phone-Mail{
-    display: flex;
-  }
-  #Phone-Mail #mail{
-    width:6vw;
-    margin-left:5em;
-  }
-  
-  #respon{
-    display: flex;
-  }
-  #respon #mail-resp{
-    width:25vw;
-    margin-left:5em;
-  }
-  
-  p{
-    color:#502223;
-    font-size: 10px;
-    margin-top: 0px;
-  }
+.arrow {
+  padding-left: 2%;
+  padding-top: 0.5%;
+}
 
-  button {
-    background-color: #502223; 
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    float:right;
-    border-radius: 0.5em;
-  }
-
-  button:hover {
-    background-color: white;
-    color:#502223;
-    border: 2px solid #502223;
-  }
-  
+.error {
+  font-size: 10px;
+}

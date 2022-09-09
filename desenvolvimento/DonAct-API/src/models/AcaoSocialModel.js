@@ -1,33 +1,45 @@
 const Sequelize = require('sequelize')
 const db = require('../config/db')
 const Ong = require('./ONGModel')
-const AcaoSocial = require('./AcaoSocialModel')
 
-const Item = db.define('itens', {
+const AcaoSocial = db.define('acaosocial', {
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4,
         allowNull: false,
         primaryKey: true
     },
-    nome: {
+    local: {
         type: Sequelize.STRING,
         allowNull: false
     },
-    descricao: {
+    objetivo: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false
     },
-    quantidade: {
+    pessoasAjudadas: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: true,
+        defaultValue: 0
     },
-    foto: {
-        type: Sequelize.BLOB,
+    dataAcao: {
+        type: Sequelize.DATE,
         allowNull: false
 
     }
-
 })
 
-module.exports = Item
+// AcaoSocial.drop()
+// Ong.drop()
+
+// Ong.hasMany(AcaoSocial, {
+//     foreignKey: {
+//         allowNull: false
+//     }
+// })
+
+// AcaoSocial.belongsTo(Ong)
+
+// AcaoSocial.sync()
+
+module.exports = AcaoSocial

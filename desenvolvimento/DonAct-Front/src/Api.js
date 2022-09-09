@@ -36,6 +36,35 @@ export async function handlePostDoador(params) {
       throw error
     }
   }
+  export async function handlePostONG(params) {
+    try {
+      const response = await fetch('http://localhost:8080/ong/cadastrar', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: {fotoDePerfil: params.fotoDePerfil,
+          cnpj: params.cnpj,
+          nome: params.nome,
+          telefone: params.telefone,
+          email: params.email,
+          endereco: params.endereco,
+          cidade: params.cidade,
+          estado: params.estado,
+          cep: params.cep,
+          senha: params.senha,
+          nomeDoResponsavel: params.nomeDoResponsavel,
+          emailDoResponsavel: params.emailDoResponsavel,}
+      })
+  
+      const data = await response.json()
+      
+      return data
+    } catch (error) {
+      throw error
+    }
+  }
+
 
   export async function handleGetDoadorAll(id) {
     try {

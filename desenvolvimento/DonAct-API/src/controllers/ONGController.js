@@ -1,6 +1,7 @@
 const axios = require('axios').default;
 const Ong = require("../models/ONGModel")
-
+const AcaoSocial = require('../models/AcaoSocialModel')
+const Item = require('../models/ItemModel')
 
 module.exports = {
   inicial: async (req, res) => {
@@ -124,5 +125,32 @@ module.exports = {
     .catch(function(err) {
       res.send(err)
     })
+  },
+  itens: async (req, res) => {
+    const ong = await Ong.findByPk(req.params.id, {include: AcaoSocial})
+    var acoes = ong.acaosocials
+    let itens 
+    let resposta = []
+    for(i in acoes) {
+      itens = await AcaoSocial.findByPk(acoes[i].dataValues.id, {include: Item})
+      resposta[i] = 
+      {
+          "acaosocial": 
+          {
+            "id": acoes[i].dataValues.id,
+            "local": acoes[i].dataValues.local,
+            "objetivo": acoes[i].dataValues.objetivo,
+            "pessoasAjudadas": acoes[i].dataValues.pessoasAjudadas,
+            "dataAcao": acoes[i].dataValues.dataAcao,
+            "itens": itens
+          }
+      }
+    }
+    if(ong != null) {
+      res.send(resposta)
+    } else {
+      res.send("ONG não encontrada!")
+    }
+
   }
 }

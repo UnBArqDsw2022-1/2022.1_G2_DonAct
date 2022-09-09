@@ -6,18 +6,15 @@ const validateSchema = (props) => {
       .string()
       .matches(/^[a-z/A-Z ]+$/, "O nome deve possuir apenas letras.")
       .required("O campo é obrigatório."),
-    cpf: yup
+    nomeDoResponsavel: yup
       .string()
-      .matches(/^[0-9]+$/, "O CPF deve possuir apenas números.")
-      .min(11, "O CPF deve ter 11 dígitos.")
-      .max(11, "O CPF deve ter 11 dígitos.")
+      .matches(/^[a-z/A-Z ]+$/, "O nome deve possuir apenas letras.")
       .required("O campo é obrigatório."),
-    dataNascimento: yup
+    cnpj: yup
       .string()
-      .matches(
-        "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$",
-        "A data deve estar no formato DD/MM/YYYY."
-      )
+      .matches(/^[0-9]+$/, "O CNPJ deve possuir apenas números.")
+      .min(14, "O CNPJ deve ter 14 dígitos.")
+      .max(14, "O CNPJ deve ter 14 dígitos.")
       .required("O campo é obrigatório."),
     telefone: yup
       .string()
@@ -30,7 +27,17 @@ const validateSchema = (props) => {
       .string()
       .email("E-mail inválido.")
       .required("O campo é obrigatório."),
+    emailDoResponsavel: yup
+      .string()
+      .email("E-mail inválido.")
+      .required("O campo é obrigatório."),
     cidade: yup.string().required("O campo é obrigatório."),
+    cep: yup
+      .string()
+      .matches(/^[0-9]+$/, "O CEP deve conter apenas números.")
+      .min(8, "CEP incorreto.")
+      .max(8, "CEP incorreto.")
+      .required("O campo é obrigatório."),
     estado: yup
       .string()
       .matches(/^[a-z/A-Z]+$/, "O estado deve ser apenas a sigla.")

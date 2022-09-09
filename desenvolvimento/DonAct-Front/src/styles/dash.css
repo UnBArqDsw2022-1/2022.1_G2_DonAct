@@ -116,3 +116,8 @@
 .btn-donation{
     float: right;
 }
+
+.itensList :hover{
+    background-color:  #E3DBD8;
+    color: #653C3D;
+}

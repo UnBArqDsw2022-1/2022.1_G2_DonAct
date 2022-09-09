@@ -12,7 +12,7 @@ const Ong = db.define('ongs', {
         }
     },
     fotoDePerfil: {
-        type: DataTypes.BLOB,
+        type: DataTypes.TEXT,
         allowNull: true
     },
     nome: {

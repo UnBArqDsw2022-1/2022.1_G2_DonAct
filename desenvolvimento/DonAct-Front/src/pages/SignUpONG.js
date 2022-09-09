@@ -12,10 +12,14 @@ import { handlePostONG } from "../Api";
 
 import "../styles/choice.css";
 import "../styles/donor.css";
+import fileToDataUri from "../hooks/fileDataToUri";
 
 const SignUpONG = () => {
+  const [dataUri, setDataUri] = useState("");
+
   const formik = useFormik({
     initialValues: {
+      fotoDePerfil: "",
       nomeDoResponsavel: "",
       nome: "",
       cnpj: "",
@@ -35,6 +39,18 @@ const SignUpONG = () => {
       handlePostONG(values);
     },
   });
+
+  const onChange = (file) => {
+    if (!file) {
+      setDataUri("");
+      return;
+    }
+
+    fileToDataUri(file).then((dataUri) => {
+      setDataUri(dataUri);
+      formik.setValues({ fotoDePerfil: dataUri });
+    });
+  };
 
   return (
     <>
@@ -58,6 +74,15 @@ const SignUpONG = () => {
                   ></img>
                 </div>
                 <div className="form-group">
+                  <div>
+                    <img width="200" height="200" src={dataUri} alt="avatar" />
+                    <input
+                      type="file"
+                      onChange={(event) =>
+                        onChange(event.target.files[0] || null)
+                      }
+                    />
+                  </div>
                   <div className="row">
                     <div className="col-md-6">
                       <Input
@@ -133,7 +158,7 @@ const SignUpONG = () => {
                           value={formik.values.emailDoResponsavel}
                         />
                         {formik.touched.emailDoResponsavel &&
-                          formik.errors.emailDoResponsavel ? (
+                        formik.errors.emailDoResponsavel ? (
                           <div className="error">
                             {formik.errors.emailDoResponsavel}
                           </div>
@@ -154,7 +179,7 @@ const SignUpONG = () => {
                           value={formik.values.nomeDoResponsavel}
                         />
                         {formik.touched.nomeDoResponsavel &&
-                          formik.errors.nomeDoResponsavel ? (
+                        formik.errors.nomeDoResponsavel ? (
                           <div className="error">
                             {formik.errors.nomeDoResponsavel}
                           </div>

@@ -145,10 +145,36 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 
 ## Descritivo dos Principais Aspectos Técnicos
 
-**Principal(is) Metodologia(s) Adotada(s)**: Scrum, Método Kanban e XP<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: Front-end em React.Js, Back-end em Express.js, Banco de Dados em MySQL e com uso de Docker<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: 
+
+- Scrum
+- Método Kanban
+
+<br>
+
+**Principais Linguagens Utilizadas e/ou Pretendidas**: 
+
+- JavaScript
+- SQL
+- Markedawn
+
+<br>
+
+
+**Principais Tecnologias Utilizadas e/ou Pretendidas**:
+
+- Front-end em React.Js
+- Back-end em Express.js
+- Banco de Dados em MySQL e com uso de Docker<br>
+
+<br>
+
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: 
+
+- MVC
+- Cliente Servidor
+
+<br>
 
 ## O Projeto está rodando?
 

@@ -145,14 +145,17 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+![Home](/imgs/home.jpeg)
+![Choice](/imgs/choice.jpeg)
+![Doador](/imgs/cadastrodoador.jpeg)
+![ONG](/imgs/cadastroong.jpeg)
 
 ## Descritivo dos Principais Aspectos Técnicos
 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum, Método Kanban e XP<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Javascript e SQL<br>
 **Principais Tecnologias Utilizadas e/ou Pretendidas**: Front-end em React.Js, Back-end em Express.js, Banco de Dados em MySQL e com uso de Docker<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: MVC e Cliente-Servidor<br>
 
 ## O Projeto está rodando?
 
@@ -183,8 +186,10 @@ $ cd desenvolvimento
 # Vá para a pasta DonAct-API
 $ cd DonAct-API
 
-# Rode o docker
+# Rode o docker ou use npm start
 $ cd docker-compose up --build
+ou
+$ npm start
 ```
 
 ### ✨ Rodando o Front End

@@ -141,14 +141,41 @@ OBS: Não especificaram no prazo (15Julho22) - Profa. Milene
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
-
+![Home](docs/imgs/home.jpeg)
+![Choice](docs/imgs/choice.jpeg)
+![Doador](docs/imgs/cadastrodoador.jpeg)
+![ONG](docs/imgs/cadastroong.jpeg)
 ## Descritivo dos Principais Aspectos Técnicos
 
-**Principal(is) Metodologia(s) Adotada(s)**: Scrum, Método Kanban e XP<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: Front-end em React.Js, Back-end em Express.js, Banco de Dados em MySQL e com uso de Docker<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: 
+
+- Scrum
+- Método Kanban
+
+<br>
+
+**Principais Linguagens Utilizadas e/ou Pretendidas**: 
+
+- JavaScript
+- SQL
+
+<br>
+
+
+**Principais Tecnologias Utilizadas e/ou Pretendidas**:
+
+- Front-end em React.Js
+- Back-end em Express.js
+- Banco de Dados em MySQL e com uso de Docker<br>
+
+<br>
+
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: 
+
+- MVC
+- Cliente Servidor
+
+<br>
 
 ## O Projeto está rodando?
 
@@ -183,8 +210,10 @@ Obs.: Solicitar variáveis à equipe
 # Execute:
 $ npm install
 
-# Dê o build e suba o docker
-$ sudo docker-compose up --build
+# Rode o docker ou use npm start
+$ cd docker-compose up --build
+ou
+$ npm start
 ```
 
 ### ✨ Rodando o Front End

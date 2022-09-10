@@ -3,6 +3,7 @@ import "../styles/login.css";
 import Logo from "../assets/logo.svg";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Login = () => (
   <div className="outer">
@@ -39,7 +40,9 @@ const Login = () => (
             </p>
           </div>
           <div className="form-btn center justify-content-center">
-            <Button text="Entrar" />
+            <Link to="/donor/dash">
+              <Button text="Entrar" />
+            </Link>
           </div>
         </form>
         <p className="register-text text-center ">

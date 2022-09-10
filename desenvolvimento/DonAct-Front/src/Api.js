@@ -1,35 +1,49 @@
 export async function handlePostDoador(params) {
   try {
-    const response = await fetch('http://localhost:8080/doador/cadastrar', {
-      method: 'POST',
+    const response = await fetch("http://localhost:8080/doador/cadastrar", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        fotoDePerfil: null,
-        nome: params.nome,
-        telefone: params.telefone,
-        email: params.email,
-        endereco: params.endereco,
-        cidade: params.cidade,
-        estado: params.estado,
-        senha: params.senha,
-        cpf: params.cpf,
-        dataNascimento: params.dataNascimento
-      }, null, 2)
+      body: JSON.stringify(
+        {
+          fotoDePerfil: "",
+          nome: params.nome,
+          telefone: params.telefone,
+          email: params.email,
+          endereco: params.endereco,
+          cidade: params.cidade,
+          estado: params.estado,
+          senha: params.senha,
+          cpf: params.cpf,
+          dataNascimento: params.dataNascimento,
+        },
+        null,
+        2
+      ),
     })
+      .then((res) => {
+        console.log(res.status);
+        if (res.status !== 201) {
+          alert("Erro no cadastro!");
+        } else {
+          alert("Cadastrado!");
+          window.location.replace("/login");
+        }
+      })
+      .catch(() => alert("Erro no cadastro!"));
 
     const data = await response.json();
 
-    return data
+    return data;
   } catch (error) {
-    throw error
+    throw error;
   }
 }
 
 export async function handlePostONG(params) {
   const body = {
-    fotoDePerfil: params.fotoDePerfil,
+    fotoDePerfil: "",
     cnpj: params.cnpj,
     nome: params.nome,
     telefone: params.telefone,
@@ -44,13 +58,21 @@ export async function handlePostONG(params) {
   };
 
   try {
-    const response = await fetch('http://localhost:8080/ong/cadastrar', {
-      method: 'POST',
+    const response = await fetch("http://localhost:8080/ong/cadastrar", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(body)
-    })
+      body: JSON.stringify(body),
+    }).then((res) => {
+      console.log(res.status);
+      if (res.status !== 201) {
+        alert("Erro no cadastro!");
+      } else {
+        alert("Cadastrado!");
+        window.location.replace("/login");
+      }
+    });
 
     const data = await response.json();
 
@@ -77,6 +99,30 @@ export async function handleGetDoador(id) {
 export async function handleGetDoadorAll(id) {
   try {
     const response = await fetch("http://localhost:8080/doador/mostrar");
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export async function handleGetONGAll() {
+  try {
+    const response = await fetch("http://localhost:8080/ong/mostrar");
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export async function handleAcoesONGAll() {
+  try {
+    const response = await fetch("http://localhost:8080/acaosocial/mostrar");
 
     const data = await response.json();
 
